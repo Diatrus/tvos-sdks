@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MobileContainerManager.framework/MobileContainerManager
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _MCMErrorDomain, _MCMFunctionNameErrorKey, _MCMPathArgumentErrorKey, _MCMSourceFileLineErrorKey ]
+    objc-classes:       [ MCMAppContainer, MCMAppDataContainer, MCMContainer, MCMContainerManager, MCMDataContainer, MCMFrameworkContainer,
+                          MCMInternalDaemonDataContainer, MCMPluginKitPluginContainer, MCMPluginKitPluginDataContainer,
+                          MCMSharedDataContainer, MCMSharedSystemDataContainer, MCMSystemDataContainer, MCMTempDirDataContainer,
+                          MCMVPNPluginContainer, MCMVPNPluginDataContainer, MCMXPCServiceDataContainer ]
+    objc-ivars:         [ MCMContainer._containerClass, MCMContainer._identifier, MCMContainer._thisContainer, MCMContainer._userId,
+                          MCMContainer._uuid ]
+...

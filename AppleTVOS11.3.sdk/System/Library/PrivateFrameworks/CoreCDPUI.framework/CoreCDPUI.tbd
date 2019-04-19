@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CDPKeychainSyncSecurityCodePeerApprovalResult, _CDPKeychainSyncSecurityCodeResetKeychainResult,
+                          _CoreCDPUIVersionNumber, _CoreCDPUIVersionString ]
+    objc-classes:       [ CDPDevicePickerViewController, CDPEscapeOption, CDPExtensionContext, CDPLocalSecretEntryPane, CDPPaneHeaderView,
+                          CDPPassphraseEntryPane, CDPPassphraseEntryViewController, CDPRemoteSecretEntryPane,
+                          CDPRemoteSecretEntryViewController, CDPRemoteUILocalSecretEntryViewController,
+                          CDPRemoteValidationEscapeOffer, CDPServiceViewController, CDPSingleICSCEntryPane,
+                          CDPSingleICSCEntryViewController, CDPTableViewController, CDPUIAccountRecoveryController, CDPUIBaseController,
+                          CDPUIController, CDPWaitingApprovalViewController, _CDPExtensionHostContext, _CDPHostViewController ]
+    objc-ivars:         [ CDPDevicePickerViewController._delegate, CDPDevicePickerViewController._devices,
+                          CDPDevicePickerViewController._escapeOffers, CDPDevicePickerViewController._remoteApprovalButton,
+                          CDPEscapeOption._escapeAction, CDPEscapeOption._progressLabel, CDPEscapeOption._progressTitle,
+                          CDPEscapeOption._style, CDPEscapeOption._title, CDPPaneHeaderView._header,
+                          CDPPassphraseEntryPane._containerView, CDPPassphraseEntryPane._headerView,
+                          CDPPassphraseEntryPane._keyboardOffset, CDPRemoteSecretEntryPane._device,
+                          CDPRemoteSecretEntryPane._escapeOffer, CDPRemoteSecretEntryPane._footerButton,
+                          CDPRemoteSecretEntryPane._remoteAccountRecovery, CDPRemoteSecretEntryPane._remoteSecretType,
+                          CDPRemoteSecretEntryViewController._delegate, CDPRemoteSecretEntryViewController._escapeOffer,
+                          CDPRemoteSecretEntryViewController._hasNumericSecret,
+                          CDPRemoteSecretEntryViewController._numericSecretLength,
+                          CDPRemoteSecretEntryViewController._remainingAttempts,
+                          CDPRemoteSecretEntryViewController._remoteRecoveryDevice,
+                          CDPRemoteSecretEntryViewController._validationState, CDPRemoteSecretEntryViewController._validator,
+                          CDPRemoteUILocalSecretEntryViewController._finished,
+                          CDPRemoteUILocalSecretEntryViewController._inlineMode, CDPRemoteValidationEscapeOffer._escapeOfferName,
+                          CDPRemoteValidationEscapeOffer._escapeOptions, CDPRemoteValidationEscapeOffer._message,
+                          CDPRemoteValidationEscapeOffer._presentingViewController, CDPRemoteValidationEscapeOffer._title,
+                          CDPServiceViewController._contentViewController, CDPServiceViewController._inlineMode,
+                          CDPTableViewController._completionHandler, CDPTableViewController._containerView,
+                          CDPTableViewController._headerSubTitle, CDPTableViewController._headerTitle,
+                          CDPTableViewController._headerView, CDPTableViewController._tableView,
+                          CDPUIBaseController._presentingViewController, CDPUIController._delegate, CDPUIController._devicePicker,
+                          CDPUIController._devices, CDPUIController._forceInlinePresentation, CDPUIController._navController,
+                          CDPUIController._remoteSecretValidator, CDPWaitingApprovalViewController._escapeOffer,
+                          _CDPHostViewController._viewServiceTerminationBlock ]
+...

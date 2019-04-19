@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/PhotosUI.framework/PhotosUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ PHLivePhotoView ]
+    objc-ivars:         [ PHLivePhotoView.__playbackRequested, PHLivePhotoView.__playerItem, PHLivePhotoView.__playingVitality,
+                          PHLivePhotoView._currentPlaybackStyle, PHLivePhotoView._delegate, PHLivePhotoView._delegateFlags,
+                          PHLivePhotoView._delegatePrivateFlags, PHLivePhotoView._livePhoto, PHLivePhotoView._muted,
+                          PHLivePhotoView._photoView, PHLivePhotoView._player, PHLivePhotoView._playerView,
+                          PHLivePhotoView._scaleAnchorOffset, PHLivePhotoView._scrubbing, PHLivePhotoView._shouldApplyTargetReadiness,
+                          PHLivePhotoView._showsStatusBorder, PHLivePhotoView._targetReadiness, PHLivePhotoView._trimmedTimeRange ]
+...

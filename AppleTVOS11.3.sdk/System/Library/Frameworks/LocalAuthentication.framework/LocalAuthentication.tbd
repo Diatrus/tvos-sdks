@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication
+current-version:       425.50.68
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _LAAvailableMechanisms, _LAContextCreate, _LAContextGetTypeID, _LACopyACMContext, _LACopyCurrentContext,
+                          _LACopyExternalizedContext, _LACopyResultOfPolicyEvaluation, _LACreateNewContextWithACMContext,
+                          _LACreateNewContextWithACMContextInSession, _LAErrorDomain, _LAErrorSubcodeKey, _LAEvaluateACL,
+                          _LAEvaluateAndUpdateACL, _LAEvaluatePolicy, _LAExecuteBlockWithContext, _LAFingerDatabaseHash,
+                          _LAIsCredentialSet, _LAPasswordRetryTime, _LASetCredential,
+                          _LATouchIDAuthenticationMaximumAllowableReuseDuration, _LAUpdateAccessControlAfterEvaluation,
+                          _LocalAuthenticationVersionNumber, _LocalAuthenticationVersionString, _cStringFromCFString,
+                          _coreauthd_create_message, _coreauthd_message_no_error, _coreauthd_message_with_reply_sync,
+                          _coreauthd_send_sync_and_do, _kLACurrentContextKey, _makeCFError, _makeCFErrorWithUserInfo ]
+    objc-classes:       [ LAClient, LAContext ]
+    objc-ivars:         [ LAClient._cachedExternalizedContext, LAClient._callInvalidationBlocks, LAClient._existingContext,
+                          LAClient._permanentError, LAClient._remoteContext, LAClient._serverConnection,
+                          LAClient._shouldRecoverConnection, LAClient._uiDelegate, LAClient._uncork_queue,
+                          LAContext._cancelButtonVisible, LAContext._client, LAContext._evaluatedPolicyDomainState,
+                          LAContext._externalizedContext, LAContext._fallbackButtonVisible, LAContext._localizedReason,
+                          LAContext._maxBiometryFailures, LAContext._prearmContext,
+                          LAContext._touchIDAuthenticationAllowableReuseDuration, LAContext._touchIDAuthenticationRetryLimit ]
+...

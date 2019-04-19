@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildID</key>
+	<string>0618144A-275E-11E8-A65D-05CCCC2CB129</string>
+	<key>ProductBuildVersion</key>
+	<string>15L211</string>
+	<key>ProductCopyright</key>
+	<string>1983-2018 Apple Inc.</string>
+	<key>ProductName</key>
+	<string>Apple TVOS</string>
+	<key>ProductVersion</key>
+	<string>11.3</string>
+</dict>
+</plist>

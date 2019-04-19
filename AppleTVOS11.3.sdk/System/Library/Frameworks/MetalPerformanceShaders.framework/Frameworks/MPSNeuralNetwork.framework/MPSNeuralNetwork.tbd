@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork
+current-version:       100.6
+compatibility-version: 1
+objc-constraint:       retain_release
+parent-umbrella:       MetalPerformanceShaders
+exports:
+  - archs:              [ arm64 ]
+    allowable-clients:  [ MetalPerformanceShaders ]
+    symbols:            [ _DeadlockedBecauseTheCPUBasedWeightUpdateForThePreviousBatchOccursAtCompletionOfThisCmdBuf_TryGPUUpdateOrNewCmdBufInstead ]
+    objc-classes:       [ MPSCNNAdd, MPSCNNAddGradient, MPSCNNArithmetic, MPSCNNArithmeticGradient, MPSCNNArithmeticGradientState,
+                          MPSCNNBatchNormalization, MPSCNNBatchNormalizationGradient, MPSCNNBatchNormalizationNode,
+                          MPSCNNBatchNormalizationState, MPSCNNBatchNormalizationStatistics,
+                          MPSCNNBatchNormalizationStatisticsGradient, MPSCNNBinaryConvolution, MPSCNNBinaryConvolutionNode,
+                          MPSCNNBinaryFullyConnected, MPSCNNBinaryFullyConnectedNode, MPSCNNBinaryKernel, MPSCNNConvolution,
+                          MPSCNNConvolutionDescriptor, MPSCNNConvolutionGradient, MPSCNNConvolutionGradientNode,
+                          MPSCNNConvolutionGradientState, MPSCNNConvolutionGradientStateNode, MPSCNNConvolutionNode,
+                          MPSCNNConvolutionState, MPSCNNConvolutionStateNode, MPSCNNConvolutionTranspose,
+                          MPSCNNConvolutionTransposeNode, MPSCNNConvolutionWeightsAndBiasesState, MPSCNNCrossChannelNormalization,
+                          MPSCNNCrossChannelNormalizationGradient, MPSCNNCrossChannelNormalizationGradientNode,
+                          MPSCNNCrossChannelNormalizationNode, MPSCNNDepthWiseConvolutionDescriptor, MPSCNNDilatedPoolingMax,
+                          MPSCNNDilatedPoolingMaxGradient, MPSCNNDilatedPoolingMaxGradientNode, MPSCNNDilatedPoolingMaxNode,
+                          MPSCNNDivide, MPSCNNDropout, MPSCNNDropoutGradient, MPSCNNDropoutGradientNode, MPSCNNDropoutGradientState,
+                          MPSCNNDropoutNode, MPSCNNFullyConnected, MPSCNNFullyConnectedGradient, MPSCNNFullyConnectedNode,
+                          MPSCNNGradientKernel, MPSCNNInstanceNormalization, MPSCNNInstanceNormalizationGradient,
+                          MPSCNNInstanceNormalizationGradientNode, MPSCNNInstanceNormalizationGradientState,
+                          MPSCNNInstanceNormalizationNode, MPSCNNKernel, MPSCNNLocalContrastNormalization,
+                          MPSCNNLocalContrastNormalizationGradient, MPSCNNLocalContrastNormalizationGradientNode,
+                          MPSCNNLocalContrastNormalizationNode, MPSCNNLogSoftMax, MPSCNNLogSoftMaxGradient,
+                          MPSCNNLogSoftMaxGradientNode, MPSCNNLogSoftMaxNode, MPSCNNLoss, MPSCNNLossDataDescriptor, MPSCNNLossDescriptor,
+                          MPSCNNLossLabels, MPSCNNLossNode, MPSCNNMultiply, MPSCNNMultiplyGradient, MPSCNNNeuron, MPSCNNNeuronAbsolute,
+                          MPSCNNNeuronAbsoluteNode, MPSCNNNeuronELU, MPSCNNNeuronELUNode, MPSCNNNeuronExponential,
+                          MPSCNNNeuronExponentialNode, MPSCNNNeuronGradient, MPSCNNNeuronGradientNode, MPSCNNNeuronHardSigmoid,
+                          MPSCNNNeuronHardSigmoidNode, MPSCNNNeuronLinear, MPSCNNNeuronLinearNode, MPSCNNNeuronLogarithm,
+                          MPSCNNNeuronLogarithmNode, MPSCNNNeuronPReLU, MPSCNNNeuronPReLUNode, MPSCNNNeuronPower, MPSCNNNeuronPowerNode,
+                          MPSCNNNeuronReLU, MPSCNNNeuronReLUN, MPSCNNNeuronReLUNNode, MPSCNNNeuronReLUNode, MPSCNNNeuronSigmoid,
+                          MPSCNNNeuronSigmoidNode, MPSCNNNeuronSoftPlus, MPSCNNNeuronSoftPlusNode, MPSCNNNeuronSoftSign,
+                          MPSCNNNeuronSoftSignNode, MPSCNNNeuronTanH, MPSCNNNeuronTanHNode, MPSCNNNormalizationGammaAndBetaState,
+                          MPSCNNPooling, MPSCNNPoolingAverage, MPSCNNPoolingAverageGradient, MPSCNNPoolingAverageGradientNode,
+                          MPSCNNPoolingAverageNode, MPSCNNPoolingGradientNode, MPSCNNPoolingL2Norm, MPSCNNPoolingL2NormGradient,
+                          MPSCNNPoolingL2NormGradientNode, MPSCNNPoolingL2NormNode, MPSCNNPoolingMax, MPSCNNPoolingMaxGradient,
+                          MPSCNNPoolingMaxGradientNode, MPSCNNPoolingMaxNode, MPSCNNSoftMax, MPSCNNSoftMaxGradient,
+                          MPSCNNSoftMaxGradientNode, MPSCNNSoftMaxNode, MPSCNNSpatialNormalization, MPSCNNSpatialNormalizationGradient,
+                          MPSCNNSpatialNormalizationGradientNode, MPSCNNSpatialNormalizationNode, MPSCNNSubPixelConvolutionDescriptor,
+                          MPSCNNSubtract, MPSCNNSubtractGradient, MPSCNNUpsampling, MPSCNNUpsamplingBilinear,
+                          MPSCNNUpsamplingBilinearGradient, MPSCNNUpsamplingBilinearGradientNode, MPSCNNUpsamplingBilinearNode,
+                          MPSCNNUpsamplingGradient, MPSCNNUpsamplingNearest, MPSCNNUpsamplingNearestGradient,
+                          MPSCNNUpsamplingNearestGradientNode, MPSCNNUpsamplingNearestNode, MPSExternalCNNBinary,
+                          MPSExternalCNNPoolingAverage, MPSExternalCNNUnary, MPSGRUDescriptor, MPSLSTMDescriptor, MPSMatrixFullyConnected,
+                          MPSMatrixNeuron, MPSMatrixSum, MPSNNAdditionGradientNode, MPSNNAdditionNode, MPSNNBilinearScaleNode,
+                          MPSNNBinaryGradientStateNode, MPSNNConcatenation, MPSNNConcatenationNode, MPSNNDefaultPadding,
+                          MPSNNDivisionNode, MPSNNGradientFilterNode, MPSNNGradientStateNode, MPSNNGraph, MPSNNImageNode,
+                          MPSNNLanczosScaleNode, MPSNNMultiplicationGradientNode, MPSNNMultiplicationNode, MPSNNNeuronDescriptor,
+                          MPSNNReduceColumnMax, MPSNNReduceColumnMean, MPSNNReduceColumnMin, MPSNNReduceColumnSum,
+                          MPSNNReduceFeatureChannelsAndWeightsMean, MPSNNReduceFeatureChannelsAndWeightsSum,
+                          MPSNNReduceFeatureChannelsMax, MPSNNReduceFeatureChannelsMean, MPSNNReduceFeatureChannelsMin,
+                          MPSNNReduceFeatureChannelsSum, MPSNNReduceRowMax, MPSNNReduceRowMean, MPSNNReduceRowMin, MPSNNReduceRowSum,
+                          MPSNNReshape, MPSNNScaleNode, MPSNNSlice, MPSNNSubtractionGradientNode, MPSNNSubtractionNode, MPSRNNDescriptor,
+                          MPSRNNImageInferenceLayer, MPSRNNMatrixInferenceLayer, MPSRNNRecurrentImageState, MPSRNNRecurrentMatrixState,
+                          MPSRNNSingleGateDescriptor ]
+...

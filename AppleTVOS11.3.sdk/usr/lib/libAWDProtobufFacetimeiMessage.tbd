@@ -1,0 +1,7 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 81C2352B-3C2A-390E-B982-9256EEF13576' ]
+platform:        tvos
+install-name:    /usr/lib/libAWDProtobufFacetimeiMessage.dylib
+objc-constraint: none
+...

@@ -1,0 +1,39 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FTServices.framework/FTServices
+current-version:       800
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _FTCTRegistrationStatusCanRegisterKey, _FTCTRegistrationStatusChangedNotification,
+                          _FTCTRegistrationStatusIMSIKey, _FTCTRegistrationStatusPLMNKey, _FTCTRegistrationStatusPhoneNumberKey,
+                          _FTEntitlementStatusChangedNotification, _FTErrorDomain, _FTRegionListFinishedLoadingNotification,
+                          _FTServerBagFinishedLoadingNotification, _FTServicesSuppressServiceErrorDialogsPropertyKey,
+                          _FTiMessageStatusDidChangeNotification, _FaceTimeDeviceCapabilityChangedNotification,
+                          _FaceTimeDeviceIDChangedNotification, _FaceTimeDeviceRegistrationCapabilityChangedNotification,
+                          _FaceTimeDeviceRegistrationStateChangedNotification, _FaceTimeDeviceRestictionsChangedNotification,
+                          _FaceTimeDeviceSIMInsertedNotification, _FaceTimeDeviceSIMRemovedNotification,
+                          _FaceTimeDeviceTechnologyChangedNotification, _MessageLogEvent, _MessageLogStatistic,
+                          __AuthenticationDictionaryFromParameters, __BindingsArrayFromURIs, __DeviceCapabilitiesFromParameters,
+                          __FTAreIDsEquivalent, __FTIDSFlagsNumber, __FTProfileVersionNumber, __FZErrorTypeFromNSError,
+                          __FZErrorTypeFromResponseCodeAndError, __GenerateDigestForSigning, __GenerateNonceAndSignature ]
+    objc-classes:       [ FTDeviceSupport, FTEntitlementSupport, FTIDSMessage, FTMessageDelivery, FTMessageDelivery_APS,
+                          FTMessageDelivery_DualMode, FTMessageDelivery_HTTP, FTMessageQueue, FTNetworkSupport, FTPasswordManager, FTRegion,
+                          FTRegionSupport, FTServerBag, FTURLRequestMessage, FTUserConfiguration, FTiMessageStatus,
+                          IDSWebTunnelRequestMessage ]
+    objc-ivars:         [ FTMessageDelivery._retries, FTMessageDelivery_DualMode._apsDelivery,
+                          FTMessageDelivery_DualMode._dualModeQueue, FTMessageDelivery_DualMode._httpDelivery,
+                          FTMessageDelivery_DualMode._userAgentString, FTPasswordManager._accountStore,
+                          FTPasswordManager._runningQueries, FTPasswordManager._userNotificationCenter, FTiMessageStatus._blockPost,
+                          FTiMessageStatus._iMessageAllowedToken, FTiMessageStatus._supportsiMessage,
+                          IDSWebTunnelRequestMessage._disableIDSTranslation, IDSWebTunnelRequestMessage._maximumResponseSize,
+                          IDSWebTunnelRequestMessage._messageHeaders, IDSWebTunnelRequestMessage._messageRequestBodyData,
+                          IDSWebTunnelRequestMessage._messageRequestBodyDictionary, IDSWebTunnelRequestMessage._messageRequestUUID,
+                          IDSWebTunnelRequestMessage._messageURL, IDSWebTunnelRequestMessage._responseBodyData,
+                          IDSWebTunnelRequestMessage._responseBodyDictionary, IDSWebTunnelRequestMessage._responseCode,
+                          IDSWebTunnelRequestMessage._responseHeaders, IDSWebTunnelRequestMessage._responseStatus,
+                          IDSWebTunnelRequestMessage._userAgentOverride ]
+...

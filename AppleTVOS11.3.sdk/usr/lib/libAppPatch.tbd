@@ -1,0 +1,10 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 16079C1D-BF63-3A6D-A827-E3D21C1D7952' ]
+platform:        tvos
+install-name:    /usr/lib/libAppPatch.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _MIApplyAppPatch ]
+...

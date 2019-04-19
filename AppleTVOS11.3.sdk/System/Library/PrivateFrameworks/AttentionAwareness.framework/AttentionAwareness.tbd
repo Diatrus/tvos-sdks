@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness
+current-version:       34.50.6
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ __AWAttentionServiceEventFilterFactory ]
+    objc-classes:       [ AWAttentionAwarenessClient, AWAttentionAwarenessClientConfig, AWAttentionAwarenessConfiguration,
+                          AWAttentionEvent, AWAttentionLostEvent, AWAttentionSampler, AWClientPollWaiter, AWClientPreferences,
+                          AWEventStatistics, AWRemoteClient, AWSampleLogData, AWSampleLogger, AWScheduler, AWSchedulerManager,
+                          AWSchedulerSemaphore ]
+    objc-ivars:         [ AWAttentionAwarenessClient._clientBlock, AWAttentionAwarenessClient._clientQueue,
+                          AWAttentionAwarenessClient._clientState, AWAttentionAwarenessClient._configuration,
+                          AWAttentionAwarenessClient._invalidated, AWAttentionAwarenessClient._pollWaiter,
+                          AWAttentionAwarenessClient._queue, AWAttentionAwarenessClient._remoteClient,
+                          AWAttentionAwarenessClient._scheduler, AWAttentionAwarenessClient._schedulerManager,
+                          AWAttentionAwarenessClient._suspensionCount, AWAttentionAwarenessClientConfig._nextTagIndex,
+                          AWAttentionAwarenessClientConfig._notifyBlocks, AWAttentionAwarenessClientConfig._notifyQueues,
+                          AWAttentionAwarenessClientConfig._notifyToken, AWAttentionAwarenessClientConfig._queue,
+                          AWAttentionAwarenessClientConfig._supportedEvents, AWAttentionAwarenessClientConfig._supportedEventsValid,
+                          AWAttentionAwarenessClientConfig._tagMap, AWAttentionAwarenessClientConfig._tagRefCount,
+                          AWAttentionAwarenessConfiguration._attentionLostTimeoutDictionary,
+                          AWAttentionAwarenessConfiguration._attentionLostTimeouts, AWAttentionAwarenessConfiguration._eventMask,
+                          AWAttentionAwarenessConfiguration._identifier, AWAttentionAwarenessConfiguration._samplingDelay,
+                          AWAttentionAwarenessConfiguration._samplingDelayExplicitlySet,
+                          AWAttentionAwarenessConfiguration._samplingInterval, AWAttentionAwarenessConfiguration._tag,
+                          AWAttentionAwarenessConfiguration._tagIndex, AWAttentionEvent._eventMask, AWAttentionEvent._tag,
+                          AWAttentionEvent._tagIndex, AWAttentionEvent._timestamp, AWAttentionLostEvent._associatedObject,
+                          AWAttentionLostEvent._attentionLostTimeout, AWAttentionSampler._currentState,
+                          AWAttentionSampler._lastPollTimeoutTime, AWAttentionSampler._lastPositiveDetectTime,
+                          AWAttentionSampler._lastTriggerTime, AWAttentionSampler._nextDeadline, AWAttentionSampler._queue,
+                          AWAttentionSampler._sampleLogger, AWAttentionSampler._samplingSuppressedMask,
+                          AWAttentionSampler._stateChangedCallback, AWClientPollWaiter._client, AWClientPollWaiter._clientBlock,
+                          AWClientPollWaiter._clientQueue, AWClientPollWaiter._pollState, AWClientPollWaiter._queue,
+                          AWClientPollWaiter._timer, AWEventStatistics._lastLogDate, AWEventStatistics._lastLogTime,
+                          AWEventStatistics._queue, AWEventStatistics._stats, AWEventStatistics._timer, AWEventStatistics._timerResumed,
+                          AWRemoteClient._attentionLostTimeoutsSec, AWRemoteClient._connection, AWRemoteClient._eventMask,
+                          AWRemoteClient._identifier, AWRemoteClient._invalid, AWRemoteClient._lastAttentionState,
+                          AWRemoteClient._lastEvent, AWRemoteClient._lastNegativeEventTimeoutValueSec,
+                          AWRemoteClient._lastPositiveEventTime, AWRemoteClient._lastPositiveNonSampledEventTime,
+                          AWRemoteClient._pollingDeadline, AWRemoteClient._pollingStartTime, AWRemoteClient._proxy,
+                          AWRemoteClient._queue, AWRemoteClient._samplingClient, AWRemoteClient._samplingDelay,
+                          AWRemoteClient._samplingInterval, AWRemoteClient._scheduler, AWRemoteClient._sentPollInitialized,
+                          AWRemoteClient._tagIndex, AWRemoteClient._unitTestSampling, AWSampleLogData._cumulativeSamplingTime,
+                          AWSampleLogData._identifier, AWSampleLogData._pollingClient, AWSampleLogData._samplingInterval,
+                          AWSampleLogData._samplingStartTime, AWSampleLogger._addedClientLogData, AWSampleLogger._clientLogData,
+                          AWSampleLogger._cumulativeSamplingTime, AWSampleLogger._outstandingClientLogData,
+                          AWSampleLogger._pollsRequested, AWSampleLogger._powerLogQueue, AWSampleLogger._queue,
+                          AWSampleLogger._samplesRequested, AWSampleLogger._samplesSucceeded, AWSampleLogger._samplingStartTime,
+                          AWSampleLogger._timer, AWScheduler._attentionSampler, AWScheduler._clients, AWScheduler._queue,
+                          AWScheduler._timer, AWScheduler._unitTestSampler, AWSchedulerManager._connection, AWSchedulerManager._queue,
+                          AWSchedulerManager._scheduler, AWSchedulerManager._semaphores, AWSchedulerSemaphore._error,
+                          AWSchedulerSemaphore._queue, AWSchedulerSemaphore._sema, AWSchedulerSemaphore._signaled ]
+...

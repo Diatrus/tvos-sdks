@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/MobileAssetUpdater.framework/MobileAssetUpdater
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _kMobileAssetUpdaterErrorDomain ]
+    objc-classes:       [ MobileAssetUpdater ]
+    objc-ivars:         [ MobileAssetUpdater._asset, MobileAssetUpdater._assetDownloaded, MobileAssetUpdater._assetType,
+                          MobileAssetUpdater._logger, MobileAssetUpdater._overrideFile, MobileAssetUpdater._purgeOverrideFile,
+                          MobileAssetUpdater._query, MobileAssetUpdater._requireAssetMetadata ]
+...

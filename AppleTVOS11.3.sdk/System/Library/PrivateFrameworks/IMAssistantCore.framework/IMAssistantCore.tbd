@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IMAssistantCore.framework/IMAssistantCore
+current-version:       800
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _IMAssistantContinuityChatsKey, _IMAssistantContinuityHandlesKey ]
+    objc-classes:       [ IMAssistantAudioPlayer, IMAssistantINMessageConverter, IMAssistantINPersonConverter, IMAssistantIntentHandler,
+                          IMAssistantMessageAttributeOptions, IMAssistantMessageReadAttributeSanitizer ]
+...

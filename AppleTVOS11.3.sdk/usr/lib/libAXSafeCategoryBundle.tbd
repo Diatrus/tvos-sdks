@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D2326DF4-8371-3964-B590-0904E9C7B90B' ]
+platform:        tvos
+install-name:    /usr/lib/libAXSafeCategoryBundle.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _AXSetUIAXReportSenderErrorLoggerFunction, _AXSetValidationErrorLoggingFunction, 
+                       _UIAccessibilityInstallSafeCategories, _UIAccessibilityInstallSafeCategory ]
+    objc-classes:    [ UIAccessibilitySafeCategory ]
+...

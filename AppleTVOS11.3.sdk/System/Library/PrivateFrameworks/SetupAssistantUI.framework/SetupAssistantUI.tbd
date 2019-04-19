@@ -1,0 +1,66 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _BFFCountryScanCompletedNotification, _BFFFlowSkipIdentifierAppleID, _BFFFlowSkipIdentifierApplePay,
+                          _BFFFlowSkipIdentifierPasscode, _BFFFlowSkipIdentifierSiri, _BFFFlowSkipIdentifierTouchID,
+                          _BFFPointImageOfColor, _BFFRoundRectToPixel, _SetupIsInternalInstall, __BFFCGFloatByDeviceHeight,
+                          __BFFHeaderTextStyle, __BFFHeightByDeviceSize, __BFFWidthByDeviceSize ]
+    objc-classes:       [ BFFAboutTextViewController, BFFAboutViewController, BFFCapabilities, BFFContinueButton, BFFFlowSkipController,
+                          BFFIconTextView, BFFLinkHandler, BFFLinkLabelFooterView, BFFLocaleCountry, BFFLocaleDataSource,
+                          BFFLocationController, BFFNavigationController, BFFNavigationObserver, BFFOnBoardingAssetManager,
+                          BFFOnBoardingSplashController, BFFOnBoardingVideoView, BFFPaneHeaderView, BFFPaneHeaderView_RemoteUI,
+                          BFFSetupAssistantOnBoarding, BFFSplashButton, BFFSplashController, BFFStackedIconTextList, BFFStyle, BFFWindow,
+                          BYFollowUpSpinnerController ]
+    objc-ivars:         [ BFFAboutTextViewController._HTMLString, BFFAboutTextViewController._disableLinkNavigation,
+                          BFFAboutTextViewController._includesAdditionalFormatting, BFFAboutTextViewController._linkString,
+                          BFFAboutTextViewController._linkTappedBlock, BFFAboutTextViewController._linkedController,
+                          BFFAboutTextViewController._titleString, BFFCapabilities._fetchQueue,
+                          BFFCapabilities._regionSupportsPaymentRegistration,
+                          BFFCapabilities._regionSupportsPaymentRegistrationInitialized, BFFIconTextView._iconView,
+                          BFFIconTextView._padding, BFFIconTextView._textLabel, BFFLinkHandler._button, BFFLinkHandler._handler,
+                          BFFLinkLabelFooterView._attributedSubtitleText, BFFLinkLabelFooterView._flexibleHeight,
+                          BFFLinkLabelFooterView._label, BFFLinkLabelFooterView._linkHandlers, BFFLinkLabelFooterView._margins,
+                          BFFLinkLabelFooterView._subtitleLabel, BFFLinkLabelFooterView._topLine,
+                          BFFLinkLabelFooterView._wantsFromBottomLayout, BFFLinkLabelFooterView._wantsSideBySideLayout,
+                          BFFLocaleCountry._code, BFFLocaleCountry._name, BFFLocaleDataSource._language,
+                          BFFLocaleDataSource._moreCountries, BFFLocaleDataSource._suggestedCountries,
+                          BFFLocationController._aliasDict, BFFLocationController._fakeMode,
+                          BFFLocationController._firstGuessedLanguages, BFFLocationController._guessedCountries,
+                          BFFLocationController._guessedCountryFromTelephony, BFFLocationController._validCountries,
+                          BFFLocationController.fWifiDevice, BFFLocationController.fWifiManager, BFFNavigationController._animating,
+                          BFFNavigationController._appearanceHandlers, BFFNavigationController._backgroundColor,
+                          BFFNavigationController._observers, BFFNavigationController._pendingShowOperation,
+                          BFFNavigationObserver._observer, BFFOnBoardingSplashController._completion,
+                          BFFOnBoardingSplashController._extendBackgroundColorToNavigationBar,
+                          BFFOnBoardingSplashController._feature, BFFOnBoardingSplashController._movieShowing,
+                          BFFOnBoardingSplashController._placeholderDuration, BFFOnBoardingSplashController._placeholderStartDate,
+                          BFFOnBoardingSplashController._preferenceKey, BFFOnBoardingSplashController._videoStartDate,
+                          BFFOnBoardingVideoView._displayingVideo, BFFOnBoardingVideoView._imageView,
+                          BFFOnBoardingVideoView._playVideo, BFFOnBoardingVideoView._videoPlayer,
+                          BFFOnBoardingVideoView._videoViewController, BFFPaneHeaderView._bottomLine,
+                          BFFPaneHeaderView._customTopPadding, BFFPaneHeaderView._detailTextLabel, BFFPaneHeaderView._flexibleHeight,
+                          BFFPaneHeaderView._icon, BFFPaneHeaderView._iconInheritsTint, BFFPaneHeaderView._iconSize,
+                          BFFPaneHeaderView._iconView, BFFPaneHeaderView._linkButton, BFFPaneHeaderView._linkHandler,
+                          BFFPaneHeaderView._subLabel, BFFPaneHeaderView._textLabel,
+                          BFFPaneHeaderView._textLabelAlignedByLastBaseline, BFFPaneHeaderView._useMinimumTopPadding,
+                          BFFPaneHeaderView_RemoteUI._rui_headerDelegate, BFFSetupAssistantOnBoarding._durationPlaceholder,
+                          BFFSetupAssistantOnBoarding._durationVideo, BFFSetupAssistantOnBoarding._feature,
+                          BFFSetupAssistantOnBoarding._has, BFFSetupAssistantOnBoarding._timestamp, BFFSplashButton._action,
+                          BFFSplashButton._button, BFFSplashButton._style, BFFSplashController._additionalInsets,
+                          BFFSplashController._bleedColor, BFFSplashController._bleedView, BFFSplashController._buttonTray,
+                          BFFSplashController._buttons, BFFSplashController._contentView, BFFSplashController._contentViewPosition,
+                          BFFSplashController._detailText, BFFSplashController._disableIconTint,
+                          BFFSplashController._fullWidthContent, BFFSplashController._headerView,
+                          BFFSplashController._lightTrayBackdrop, BFFSplashController._scrollView,
+                          BFFSplashController._scrollingDisabled, BFFSplashController._tint,
+                          BFFSplashController._ultraLightTrayBackdrop, BFFSplashController._usesTwoButtonLayout,
+                          BFFStackedIconTextList._iconTextPadding, BFFStackedIconTextList._itemSpacing,
+                          BFFStackedIconTextList._numberOfEntries, BYFollowUpSpinnerController._spinner ]
+...

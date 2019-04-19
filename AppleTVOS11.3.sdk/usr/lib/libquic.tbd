@@ -1,0 +1,10 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 70527F46-8EF9-3E75-A4BD-32D97F6779F5' ]
+platform:        tvos
+install-name:    /usr/lib/libquic.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _nw_protocol_quic_identifier, _nw_protocol_quic_versions ]
+...

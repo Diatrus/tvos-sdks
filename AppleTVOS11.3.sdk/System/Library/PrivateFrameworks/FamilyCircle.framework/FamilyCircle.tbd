@@ -1,0 +1,38 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _FAErrorDomain, _FAErrorResponseUserInfoKey, __FALogSystem, _kFAServicePasswordOption,
+                          _kFAServiceUsernameOption ]
+    objc-classes:       [ FAAddFamilyMemberRequest, FAClearFamilyCircleCacheRequest, FADispatchFamilyPushRequest, FAFamilyCircle,
+                          FAFamilyCircleRequest, FAFamilyCloudKitProperties, FAFamilyMember, FAFamilySettings, FAFetchFamilyCircleRequest,
+                          FAFetchFamilyPhotoRequest, FAHandleFamilyEventPushNotificationRequest, FAPushNotificationHandler,
+                          FARegisterPushTokenRequest, FARemoveFamilyMemberRequest, _FAFamilyCircleRequestConnectionFactory,
+                          _FAFamilyCircleRequestConnectionProvider ]
+    objc-ivars:         [ FAAddFamilyMemberRequest._memberAppleID, FAAddFamilyMemberRequest._memberIsUnder13,
+                          FAAddFamilyMemberRequest._memberPassword, FADispatchFamilyPushRequest._payload,
+                          FAFamilyCircle.__serverResponse, FAFamilyCircle._cloudKitProperties, FAFamilyCircle._members,
+                          FAFamilyCircleRequest._connectionProvider, FAFamilyCircleRequest._passwordOrToken,
+                          FAFamilyCircleRequest._usernameOrDSID, FAFamilyCloudKitProperties._dictionary, FAFamilyMember._dictionary,
+                          FAFamilySettings._iTunesAccount, FAFamilySettings._isFirstRun, FAFamilySettings._presentingViewController,
+                          FAFamilySettings._prompter, FAFamilySettings._retainedSelf,
+                          FAFetchFamilyCircleRequest._doNotFetchFromServer, FAFetchFamilyCircleRequest._expectedDSIDs,
+                          FAFetchFamilyCircleRequest._forceServerFetch,
+                          FAFetchFamilyCircleRequest._promptUserToResolveAuthenticatonFailure,
+                          FAFetchFamilyCircleRequest._serverResponse, FAFetchFamilyCircleRequest._signedInAccountShouldBeApprover,
+                          FAFetchFamilyPhotoRequest._backgroundType, FAFetchFamilyPhotoRequest._emailAddress,
+                          FAFetchFamilyPhotoRequest._fullname, FAFetchFamilyPhotoRequest._localFallback,
+                          FAFetchFamilyPhotoRequest._memberDSID, FAFetchFamilyPhotoRequest._memberHashedDSID,
+                          FAFetchFamilyPhotoRequest._monogramDiameter, FAFetchFamilyPhotoRequest._phoneNumber,
+                          FAFetchFamilyPhotoRequest._requestedSize, FAFetchFamilyPhotoRequest._requiredHeight,
+                          FAFetchFamilyPhotoRequest._requiredWidth, FAFetchFamilyPhotoRequest._useMonogramAsLastResort,
+                          FAHandleFamilyEventPushNotificationRequest._payload, FARegisterPushTokenRequest._pushToken,
+                          FARemoveFamilyMemberRequest._memberDSID, _FAFamilyCircleRequestConnectionProvider._connection,
+                          _FAFamilyCircleRequestConnectionProvider._factory, _FAFamilyCircleRequestConnectionProvider._lock ]
+...

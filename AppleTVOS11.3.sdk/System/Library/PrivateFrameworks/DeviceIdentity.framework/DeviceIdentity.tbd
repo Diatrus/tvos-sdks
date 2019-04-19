@@ -1,0 +1,24 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity
+current-version:       0
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DeviceIdentityCreateClientCertificateRequest, _DeviceIdentityIssueClientCertificateWithCompletion,
+                          _kMABAAHeaderUCRTToken, _kMAOptionsAllowInvalidNetworkCertificates, _kMAOptionsBAAAccessControls,
+                          _kMAOptionsBAACACert, _kMAOptionsBAAIgnoreExistingKeychainItems, _kMAOptionsBAAKeychainAccessGroup,
+                          _kMAOptionsBAAKeychainLabel, _kMAOptionsBAANonce, _kMAOptionsBAAOIDAccessControls,
+                          _kMAOptionsBAAOIDDeviceIdentifiers, _kMAOptionsBAAOIDDeviceOSInformation,
+                          _kMAOptionsBAAOIDHardwareProperties, _kMAOptionsBAAOIDIMG4Manifest, _kMAOptionsBAAOIDKeyUsageProperties,
+                          _kMAOptionsBAAOIDNonce, _kMAOptionsBAAOIDSToInclude, _kMAOptionsBAAOIDUCRTDeviceIdentifiers,
+                          _kMAOptionsBAARKCertificationPublicKey, _kMAOptionsBAARKSigningPublicKey, _kMAOptionsBAASCRTAttestation,
+                          _kMAOptionsBAAUIKPublicKey, _kMAOptionsBAAValidity, _kMAOptionsBasebandWaitCount,
+                          _kMAOptionsResuseExistingKey ]
+    objc-classes:       [ DeviceType, GestaltHlpr ]
+    objc-ivars:         [ DeviceType._device_class, DeviceType._has_telephony, DeviceType._is_fpga, DeviceType._product_type,
+                          DeviceType._should_hactivate ]
+...

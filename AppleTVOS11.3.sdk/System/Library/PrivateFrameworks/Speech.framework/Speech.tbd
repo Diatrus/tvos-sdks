@@ -1,0 +1,46 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Speech.framework/Speech
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SFIsTV, _SpeechVersionNumber, _SpeechVersionString, _kSFHindiLocaleIdentifier,
+                          _kSFHindiTranslitKeyboardIdentifier, _kSFHindiTranslitReplacementLocaleIdentifier ]
+    objc-classes:       [ SFSpeechAudioBufferRecognitionRequest, SFSpeechRecognitionRequest, SFSpeechRecognitionResult,
+                          SFSpeechRecognitionTask, SFSpeechRecognizer, SFSpeechURLRecognitionRequest, SFTranscription,
+                          SFTranscriptionSegment, _SFSearchRequest, _SFSearchResult, _SFSpeechRecognitionBlockTask,
+                          _SFSpeechRecognitionDelegateTask ]
+    objc-ivars:         [ SFSpeechAudioBufferRecognitionRequest._audioEnded, SFSpeechAudioBufferRecognitionRequest._bufferDelegate,
+                          SFSpeechAudioBufferRecognitionRequest._converter, SFSpeechAudioBufferRecognitionRequest._queue,
+                          SFSpeechAudioBufferRecognitionRequest._queuedBuffers, SFSpeechRecognitionRequest._contextualStrings,
+                          SFSpeechRecognitionRequest._detectMultipleUtterances, SFSpeechRecognitionRequest._forceOfflineRecognition,
+                          SFSpeechRecognitionRequest._interactionIdentifier, SFSpeechRecognitionRequest._maxiumRecognitionDuration,
+                          SFSpeechRecognitionRequest._modelOverrideURL, SFSpeechRecognitionRequest._recognitionOverrides,
+                          SFSpeechRecognitionRequest._searchRequest, SFSpeechRecognitionRequest._shouldReportPartialResults,
+                          SFSpeechRecognitionRequest._taskHint, SFSpeechRecognitionRequest._voiceTriggerEventInfo,
+                          SFSpeechRecognitionResult._bestTranscription, SFSpeechRecognitionResult._final,
+                          SFSpeechRecognitionResult._rawTranscription, SFSpeechRecognitionResult._rawTranscriptions,
+                          SFSpeechRecognitionResult._transcriptions, SFSpeechRecognitionTask._cancelled,
+                          SFSpeechRecognitionTask._completed, SFSpeechRecognitionTask._dictationConnection,
+                          SFSpeechRecognitionTask._error, SFSpeechRecognitionTask._externalQueue, SFSpeechRecognitionTask._finishing,
+                          SFSpeechRecognitionTask._internalQueue, SFSpeechRecognitionTask._languageCode,
+                          SFSpeechRecognitionTask._request, SFSpeechRecognitionTask._requestIdentifier,
+                          SFSpeechRecognitionTask._running, SFSpeechRecognitionTask._taskHint, SFSpeechRecognizer._defaultTaskHint,
+                          SFSpeechRecognizer._delegate, SFSpeechRecognizer._dictationConnection, SFSpeechRecognizer._facetimeObserver,
+                          SFSpeechRecognizer._foregroundObserver, SFSpeechRecognizer._languageCode, SFSpeechRecognizer._locale,
+                          SFSpeechRecognizer._preferencesObserver, SFSpeechRecognizer._queue, SFSpeechURLRecognitionRequest._URL,
+                          SFTranscription._formattedString, SFTranscription._segments, SFTranscriptionSegment._alternativeConfidences,
+                          SFTranscriptionSegment._alternativeSubstrings, SFTranscriptionSegment._confidence,
+                          SFTranscriptionSegment._duration, SFTranscriptionSegment._substring, SFTranscriptionSegment._substringRange,
+                          SFTranscriptionSegment._timestamp, _SFSearchRequest._headerFields, _SFSearchRequest._queryParameters,
+                          _SFSearchRequest._searchTypes, _SFSearchResult._data, _SFSearchResult._response, _SFSearchResult._searchType,
+                          _SFSpeechRecognitionBlockTask._hasFiredFinalResult, _SFSpeechRecognitionBlockTask._resultHandler,
+                          _SFSpeechRecognitionDelegateTask._delegate, _SFSpeechRecognitionDelegateTask._hasSentRealSearchResults,
+                          _SFSpeechRecognitionDelegateTask._recognitionResultToReportAfterFinalSearchResults,
+                          _SFSpeechRecognitionDelegateTask._selfReference,
+                          _SFSpeechRecognitionDelegateTask._waitForVoiceSearchResult ]
+...

@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SignpostCollection.framework/SignpostCollection
+current-version:       2.4
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SignpostCollectionVersionNumber, _SignpostCollectionVersionString, _SignpostSystemTimebaseRatio,
+                          __signpostcollection_debug_log, _kSignpostNotification_NoTimeout ]
+    objc-classes:       [ SignpostSupportObjectSerializer ]
+    objc-ivars:         [ SignpostSupportObjectSerializer._extractor, SignpostSupportObjectSerializer._maxBatchSize,
+                          SignpostSupportObjectSerializer._maxBytesSize, SignpostSupportObjectSerializer._outstandingLogMessage,
+                          SignpostSupportObjectSerializer._outstandingSignpostObjects,
+                          SignpostSupportObjectSerializer._serializedLogMessageBlock,
+                          SignpostSupportObjectSerializer._serializedSignpostEventBlock ]
+...

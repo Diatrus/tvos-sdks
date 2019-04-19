@@ -1,0 +1,40 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/BaseBoardUI.framework/BaseBoardUI
+current-version:       0
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _BSIntervalInterpolatorInvertUIRubberBanding, _BSIntervalInterpolatorUIRubberBanding,
+                          _BSUIBaseBoardUIVersionNumber, _BSUIBaseBoardUIVersionString, _BSUIConstrainValueToIntervalWithRubberBand,
+                          _BSUIConstrainValueWithRubberBand, _BSUICreateIOSurface, _BSUICreateUISurfaceWithColorSpaceAndDrawBlock,
+                          _BSUIInvertRubberBandValue, _BSUIInvertRubberBandValueForInterval,
+                          _BSUISurfaceImageWithColorSpaceAndDrawBlock ]
+    objc-classes:       [ BSUIAnimationFactory, BSUIBackdropView, BSUIDateLabelFactory, BSUIDefaultDateLabel, BSUIMappedImageCache,
+                          BSUIMappedImageCacheFuture, BSUIMappedImageCacheOptions, BSUIMappedSurfaceImage, BSUIRelativeDateLabel,
+                          BSUIResolutionClass, BSUIScrollView, _BSUIAnimationAttributesFactory ]
+    objc-ivars:         [ BSUIAnimationFactory._allowsAdditiveAnimations, BSUIAnimationFactory._settings,
+                          BSUIBackdropView._finalScale, BSUIBackdropView._initialScale, BSUIBackdropView._rasterizationScale,
+                          BSUIBackdropView._scaleForNoBlur, BSUIBackdropView._transitionProgress,
+                          BSUIDateLabelFactory._recycledLabelsByStyle, BSUIDefaultDateLabel._allDay, BSUIDefaultDateLabel._delegate,
+                          BSUIDefaultDateLabel._effectiveAllDay, BSUIDefaultDateLabel._effectiveAllDayEndDate,
+                          BSUIDefaultDateLabel._effectiveAllDayLastValidDate, BSUIDefaultDateLabel._effectiveAllDayStartDate,
+                          BSUIDefaultDateLabel._isCoalescingUpdates, BSUIDefaultDateLabel._isTimestamp,
+                          BSUIDefaultDateLabel._labelType, BSUIDefaultDateLabel._needsUpdateFromCoalesce,
+                          BSUIDefaultDateLabel._timeZoneRelativeEndDate, BSUIDefaultDateLabel._timeZoneRelativeStartDate,
+                          BSUIDefaultDateLabel._updateTimer, BSUIMappedImageCache._options, BSUIMappedImageCache._path,
+                          BSUIMappedImageCache._queue, BSUIMappedImageCache._queue_allKeys,
+                          BSUIMappedImageCache._queue_keysToImagesOrFutures, BSUIMappedImageCache._uniqueIdentifier,
+                          BSUIMappedImageCacheFuture._cacheImage, BSUIMappedImageCacheFuture._submitted,
+                          BSUIMappedImageCacheFuture._waitBlock, BSUIMappedImageCacheFuture._waitableSemaphore,
+                          BSUIMappedImageCacheFuture._waited, BSUIMappedImageCacheFuture._workCompletionWasCalled,
+                          BSUIMappedImageCacheFuture._workQueue, BSUIMappedImageCacheOptions._containerPathProvider,
+                          BSUIMappedSurfaceImage._mappedSurfaceData, BSUIRelativeDateLabel._comparedToNow,
+                          BSUIRelativeDateLabel._relativeDateTimer, BSUIRelativeDateLabel._resolution, BSUIRelativeDateLabel._value,
+                          BSUIScrollView._didScroll, BSUIScrollView._initialContentOffset, BSUIScrollView._isScrolling,
+                          BSUIScrollView._preventDidEndScrolling, BSUIScrollView._previousContentOffset,
+                          BSUIScrollView._scrollCompletion, BSUIScrollView._scrolling, _BSUIAnimationAttributesFactory._attributes ]
+...

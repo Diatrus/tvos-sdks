@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/WirelessCoexManager.framework/WirelessCoexManager
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _WCMEnabled, _WirelessRadioManagerDumpLog, _WirelessRadioManagerSetLogToFile ]
+    objc-classes:       [ WCMClientProxy, WCMSetting, WRMClientInterface, WRM_iRATInterface ]
+    objc-ivars:         [ WCMClientProxy.mConnection, WCMClientProxy.mDelegate, WCMClientProxy.mIsRegistered, WCMClientProxy.mProcessId,
+                          WCMClientProxy.mQueue, WRMClientInterface.mConnection, WRMClientInterface.mNotificationBlock,
+                          WRMClientInterface.mProcessId, WRMClientInterface.mQueue, WRM_iRATInterface.mAppLists,
+                          WRM_iRATInterface.mBBAssertionBGAppActive, WRM_iRATInterface.mClientSupportsMultipleAppTypes,
+                          WRM_iRATInterface.mLinkPreferenceSubscriptionEnabled, WRM_iRATInterface.mLocationAssertionEnabled,
+                          WRM_iRATInterface.mLocationState, WRM_iRATInterface.mObserver, WRM_iRATInterface.mOppModeObserver,
+                          WRM_iRATInterface.mTelephoneAssertionEnabled, WRM_iRATInterface.mTelephonyStateEnabled ]
+...

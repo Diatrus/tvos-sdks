@@ -1,0 +1,65 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _NUIContainerViewDefaultDimension, _NUIContainerViewDefaultDirectionalInsets,
+                          _NUIContainerViewDefaultInsets, _NUIContainerViewDefaultSize, _NUIContainerViewSystemDimension,
+                          __NUIIsDebuggerAttached, __ZN18_NUIBoxArrangement12measureCellsEb6CGSize,
+                          __ZN18_NUIBoxArrangement13positionCellsE6CGRectU13block_pointerFvPU29objcproto18NUIArrangementItem11objc_objectS0_E,
+                          __ZN18_NUIBoxArrangement19resetForMeasurementEb, __ZN18_NUIBoxArrangementC1Ev, __ZN18_NUIBoxArrangementC2Ev,
+                          __ZN19_NUIGridArrangement12measureCellsEb6CGSizePb,
+                          __ZN19_NUIGridArrangement13positionCellsE6CGRectU13block_pointerFvPU29objcproto18NUIArrangementItem11objc_objectS0_E,
+                          __ZN19_NUIGridArrangement14enumerateCellsEU13block_pointerFvRK23_NUIGridArrangementCellE,
+                          __ZN19_NUIGridArrangement19positionSubsetCellsE8_NSRangeS0_6CGRectU13block_pointerFvPU29objcproto18NUIArrangementItem11objc_objectS1_E,
+                          __ZN19_NUIGridArrangement19resetForMeasurementEb,
+                          __ZN19_NUIGridArrangement22frameForColumnsAndRowsE8_NSRangeS0_6CGRect,
+                          __ZN19_NUIGridArrangement24unionFrameForSubsetCellsE8_NSRangeS0_6CGRect, __ZN19_NUIGridArrangementC1Ev,
+                          __ZN19_NUIGridArrangementC2Ev,
+                          __ZN22_NUIBoxArrangementCellC1EPU29objcproto18NUIArrangementItem11objc_object21NUIContainerAlignmentS2_,
+                          __ZN22_NUIBoxArrangementCellC2EPU29objcproto18NUIArrangementItem11objc_object21NUIContainerAlignmentS2_,
+                          __ZN23_NUIGridArrangementCellC1EPU29objcproto18NUIArrangementItem11objc_object8_NSRangeS2_21NUIContainerAlignmentS3_,
+                          __ZN23_NUIGridArrangementCellC2EPU29objcproto18NUIArrangementItem11objc_object8_NSRangeS2_21NUIContainerAlignmentS3_,
+                          __ZN28_NUIGridArrangementDimensionC1Emd, __ZN28_NUIGridArrangementDimensionC2Emd ]
+    objc-classes:       [ NUIBoxArrangement, NUIContainerBoxView, NUIContainerGridView, NUIContainerStackView, NUIContainerView,
+                          NUIContentScrollView, NUIGridArrangement, NUISizeCache, NUIWidgetGridView, NUIWidgetGridViewCell,
+                          NUIWidgetGridViewEmptyCell, _NUIViewContainerViewInfo ]
+    objc-ivars:         [ NUIBoxArrangement._arrangement, NUIBoxArrangement._bounds, NUIBoxArrangement._container,
+                          NUIBoxArrangement._dataSource, NUIBoxArrangement._flags, NUIBoxArrangement._scale,
+                          NUIContainerBoxView._boxFlags, NUIContainerBoxView._horizontalAlignment,
+                          NUIContainerBoxView._verticalAlignment, NUIContainerBoxView._visibleArrangement,
+                          NUIContainerGridView._columnWidth, NUIContainerGridView._columns, NUIContainerGridView._gridViewFlags,
+                          NUIContainerGridView._horizontalAlignment, NUIContainerGridView._rowBaselineViews,
+                          NUIContainerGridView._rowHeight, NUIContainerGridView._rows, NUIContainerGridView._spacing,
+                          NUIContainerGridView._verticalAlignment, NUIContainerGridView._viewRanges, NUIContainerGridView._viewRows,
+                          NUIContainerGridView._visibleArrangement, NUIContainerGridView._visibleCount,
+                          NUIContainerStackView._alignment, NUIContainerStackView._axis, NUIContainerStackView._distribution,
+                          NUIContainerStackView._effectiveAxis, NUIContainerStackView._smallestWidthKnownToCompress,
+                          NUIContainerStackView._spacing, NUIContainerStackView._spacingAfter, NUIContainerStackView._spacingViews,
+                          NUIContainerStackView._stackViewFlags, NUIContainerStackView._visibleArrangement,
+                          NUIContainerStackView._visibleCount, NUIContainerView._arrangedSubviews,
+                          NUIContainerView._asynchronousMeasurement, NUIContainerView._baselineRelativeArrangement,
+                          NUIContainerView._cachedIntrinsicSizes, NUIContainerView._containerFlags, NUIContainerView._delegate,
+                          NUIContainerView._layoutMarginsRelativeArrangement, NUIContainerView._preferredMaxLayoutWidth,
+                          NUIContainerView._visibleArrangedSubviews, NUIContentScrollView._containerViewFlags,
+                          NUIContentScrollView._contentView, NUIContentScrollView._horizontalAlignment,
+                          NUIContentScrollView._preferredMaxLayoutWidth, NUIContentScrollView._verticalAlignment,
+                          NUIGridArrangement._arrangement, NUIGridArrangement._bounds, NUIGridArrangement._container,
+                          NUIGridArrangement._dataSource, NUIGridArrangement._flags, NUIGridArrangement._scale, NUISizeCache._sizeCache,
+                          NUISizeCache._threadSafe, NUIWidgetGridView._centerAdjustmentAllowed, NUIWidgetGridView._currentLabelOutset,
+                          NUIWidgetGridView._currentLayout, NUIWidgetGridView._dataSource, NUIWidgetGridView._delegate,
+                          NUIWidgetGridView._gridView, NUIWidgetGridView._imageStyle, NUIWidgetGridView._itemViews,
+                          NUIWidgetGridView._labelSizes, NUIWidgetGridView._subtitleStyle, NUIWidgetGridView._titleStyle,
+                          NUIWidgetGridViewCell._accessibilityEnabled, NUIWidgetGridViewCell._donatableSpace,
+                          NUIWidgetGridViewCell._donatableSpaceIsValid, NUIWidgetGridViewCell._gridView, NUIWidgetGridViewCell._index,
+                          NUIWidgetGridViewCell._measuredSize, NUIWidgetGridViewCell._width, NUIWidgetGridViewEmptyCell._gridView,
+                          NUIWidgetGridViewEmptyCell._index, NUIWidgetGridViewEmptyCell._width,
+                          _NUIViewContainerViewInfo._customAlignmentInsets, _NUIViewContainerViewInfo._customBottomBaseline,
+                          _NUIViewContainerViewInfo._customTopBaseline, _NUIViewContainerViewInfo._flags,
+                          _NUIViewContainerViewInfo._sizeCache ]
+...

@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/Support/ModuleBase.framework/ModuleBase
+current-version:       425.50.68
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _ModuleBaseVersionNumber, _ModuleBaseVersionString ]
+    objc-classes:       [ AuthenticationInProgress, AuthenticationManager, ContextPlugin, MechanismManager, Module ]
+    objc-ivars:         [ AuthenticationInProgress._internalOptions, AuthenticationInProgress._mechanism,
+                          AuthenticationInProgress._originatorId, AuthenticationInProgress._originatorPid,
+                          AuthenticationInProgress._originatorUid, AuthenticationInProgress._policy, AuthenticationInProgress._reply,
+                          AuthenticationInProgress._running, AuthenticationInProgress._started, AuthenticationInProgress._uiDelegate,
+                          AuthenticationManager._callHistoryForPid, AuthenticationManager._completionHandler,
+                          AuthenticationManager._idleBlocks, AuthenticationManager._pendingAuthentication,
+                          AuthenticationManager._runningAuthentication, ContextPlugin._cachedExternalizedContext,
+                          ContextPlugin._contextOwner, ContextPlugin._internalOperationOptions, ContextPlugin._resultInfo,
+                          MechanismManager._evaluatedPolicy, MechanismManager._mechanismContext, MechanismManager._plugins,
+                          MechanismManager._serverQueue, Module._mechanismManager ]
+...

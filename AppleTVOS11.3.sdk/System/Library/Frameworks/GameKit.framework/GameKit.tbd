@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/GameKit.framework/GameKit
+current-version:       563.15
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    re-exports:         [ /System/Library/Frameworks/GameController.framework/GameController,
+                          /System/Library/Frameworks/GameplayKit.framework/GameplayKit,
+                          /System/Library/Frameworks/Metal.framework/Metal, /System/Library/Frameworks/MetalKit.framework/MetalKit,
+                          /System/Library/Frameworks/ModelIO.framework/ModelIO,
+                          /System/Library/Frameworks/ReplayKit.framework/ReplayKit,
+                          /System/Library/Frameworks/SceneKit.framework/SceneKit,
+                          /System/Library/Frameworks/SpriteKit.framework/SpriteKit,
+                          /System/Library/Frameworks/UIKit.framework/UIKit,
+                          /System/Library/PrivateFrameworks/GameCenter.framework/GameCenter ]
+    symbols:            [ _GKGameKitUmbrellaFrameworkStub, _kGameKitGameKitVersionNumber, _kGameKitGameKitVersionString ]
+...

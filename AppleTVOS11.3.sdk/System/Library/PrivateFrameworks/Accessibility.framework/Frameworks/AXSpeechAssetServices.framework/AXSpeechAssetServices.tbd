@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AVSpeechSynthesisVoiceIdentifierVictoria, __AXSettingsSortedAssetsFromAssets ]
+    objc-classes:       [ AXSettingsVoiceAssetManager, AXSpeechAssetMonitorHelper, AXSpeechPronunciationHelper,
+                          AXSpeechPronunciationOptions ]
+    objc-ivars:         [ AXSettingsVoiceAssetManager._delegates, AXSettingsVoiceAssetManager._reachability,
+                          AXSettingsVoiceAssetManager._samplePlayer, AXSpeechAssetMonitorHelper._lastVoiceAssetUpdateTime,
+                          AXSpeechAssetMonitorHelper._reachability, AXSpeechPronunciationHelper._inSession,
+                          AXSpeechPronunciationHelper._resultCallback, AXSpeechPronunciationOptions._language,
+                          AXSpeechPronunciationOptions._orthography ]
+...

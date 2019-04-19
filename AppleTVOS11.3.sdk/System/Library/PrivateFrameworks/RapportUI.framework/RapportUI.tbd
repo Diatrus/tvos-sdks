@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RapportUI.framework/RapportUI
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _RPImageForDeviceModel, _RPUILocalizedString, _RPUILocalizedStringF, _RPUILocalizedStringV ]
+    objc-classes:       [ RPPairingManagerUIController, RPPairingUIController ]
+    objc-ivars:         [ RPPairingManagerUIController._allowManualIP, RPPairingManagerUIController._dispatchQueue,
+                          RPPairingManagerUIController._invalidationHandler, RPPairingManagerUIController._runInProcess,
+                          RPPairingManagerUIController._serviceType, RPPairingUIController._invalidationHandler,
+                          RPPairingUIController._retryHandler, RPPairingUIController._tryPINHandler ]
+...

@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/TextInput/TextInput_ja.bundle/TextInput_ja
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ Romakana, TICandidateSorter, TIKeyboardFeatureSpecialization_ja, TIKeyboardInputManager_ja,
+                          TIKeyboardInputManager_ja_Kana, TIKeyboardInputManager_ja_Romaji, TIWordSearch3x3Kana, TIWordSearch50onKana,
+                          TIWordSearchJapaneseOperationGetCandidates, TIWordSearchKana, TIWordSearchRomajiKana ]
+    objc-ivars:         [ Romakana._consonantsCharacterSet, TICandidateSorter._index, TICandidateSorter._radicalToSortPosition,
+                          TIKeyboardInputManager_ja._alternateDisplayString, TIKeyboardInputManager_ja._candidateSorter,
+                          TIKeyboardInputManager_ja._flickUsed, TIKeyboardInputManager_ja._isCandidateSelectionSuppressed,
+                          TIKeyboardInputManager_ja._isEmojiFacemarkMode, TIKeyboardInputManager_ja._isPhraseBoundarySet,
+                          TIKeyboardInputManager_ja._kbws, TIKeyboardInputManager_ja._operationQueue,
+                          TIKeyboardInputManager_ja._recentlyCommittedCandidatesForReanalysis,
+                          TIKeyboardInputManager_ja._remainingInputLength, TIKeyboardInputManager_ja._shouldLearnAcceptedCandidate,
+                          TIKeyboardInputManager_ja._smartPunctuationController, TIKeyboardInputManager_ja_Kana._is3x3,
+                          TIKeyboardInputManager_ja_Kana._isFlickOnly, TIKeyboardInputManager_ja_Kana._kanaFlickDirectionMap_3x3,
+                          TIKeyboardInputManager_ja_Kana._kanaFlickDirectionMap_50on,
+                          TIKeyboardInputManager_ja_Kana._kanaFlickDirectionMap_current,
+                          TIKeyboardInputManager_ja_Kana._kanaFlickKeyMap_3x3, TIKeyboardInputManager_ja_Kana._kanaFlickKeyMap_50on,
+                          TIKeyboardInputManager_ja_Kana._kanaFlickKeyMap_current, TIKeyboardInputManager_ja_Kana._knowHardwareMode,
+                          TIKeyboardInputManager_ja_Kana._knowInputMode, TIKeyboardInputManager_ja_Kana._knowSplitMode,
+                          TIKeyboardInputManager_ja_Kana._supportsFlickAutocorrection,
+                          TIKeyboardInputManager_ja_Romaji._externalIndexToInternalIndexMappingArray,
+                          TIKeyboardInputManager_ja_Romaji._externalInputIndex, TIKeyboardInputManager_ja_Romaji._externalString,
+                          TIWordSearchJapaneseOperationGetCandidates._contextString,
+                          TIWordSearchJapaneseOperationGetCandidates._flickUsed,
+                          TIWordSearchJapaneseOperationGetCandidates._phraseBoundarySet, TIWordSearchKana._candidateResultSet,
+                          TIWordSearchKana._contactObserver, TIWordSearchKana._insertKatakanaAtIndex,
+                          TIWordSearchRomajiKana._romakana ]
+...

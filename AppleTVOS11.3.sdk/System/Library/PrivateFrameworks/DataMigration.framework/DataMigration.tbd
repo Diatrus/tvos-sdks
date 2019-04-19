@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataMigration.framework/DataMigration
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DMChangeGraphicalProgressVisibility, _DMCopyContext, _DMCopyCurrentBuildVersion,
+                          _DMCopyMigrationPhaseDescription, _DMCopyOrderedPluginIndentifiers, _DMForceMigrationOnNextReboot,
+                          _DMGetPreviousBuildVersion, _DMGetUserDataDisposition, _DMIsMigrationNeeded, _DMPerformMigration,
+                          _DMPerformMigrationIfNeeded, _DMPerformMigrationReturningAfterPlugin, _DMReportMigrationFailure,
+                          _DMSetContext, _DMTestMigrationUI, _DMTestPerformMigrationInfrastructure, __DMLog, __DMLogFunc,
+                          __DMPerformMigration ]
+    objc-classes:       [ DMConnection, DMEnvironment, DMMigrationPluginWrapperConnection, DMPluginFileSystemRep, DMXPCConnection,
+                          DataClassMigrator ]
+    objc-ivars:         [ DMConnection._connection, DMEnvironment._testMigrationInfrastructureOnly,
+                          DMMigrationPluginWrapperConnection._connection, DMPluginFileSystemRep._bundle,
+                          DMPluginFileSystemRep._bundleIdentifier, DMPluginFileSystemRep._name, DMPluginFileSystemRep._path,
+                          DMXPCConnection._connection, DMXPCConnection._interruptionHandler, DMXPCConnection._invalidationHandler,
+                          DMXPCConnection._queue, DMXPCConnection._replyQueue, DataClassMigrator._context,
+                          DataClassMigrator._didUpgrade ]
+...

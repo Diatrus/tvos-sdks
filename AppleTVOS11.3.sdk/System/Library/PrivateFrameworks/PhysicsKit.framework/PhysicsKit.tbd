@@ -1,0 +1,63 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _PKArrayFromB2ChainShape, _PKArrayFromB2PolygonShape, _PKArrayFromCGPath, _PKArrayFromPKPath,
+                          _PKCGPathCreateFromArray, _PKGet_INV_PTM_RATIO, _PKGet_PTM_RATIO, _PKPathCreateFromCGPath,
+                          _PKPathCreateFromCGPathWithOptions, _PKPathCreateFromSimplifiedCGPath, _PKSet_PTM_Ratio,
+                          __ZN12QuadTreeNode3addEffa, __ZN12QuadTreeNode4findEffRPS_, __ZN12QuadTreeNode7addLineEffffa,
+                          __ZN12QuadTreeNodeC1Efffff, __ZN12QuadTreeNodeC2Efffff, __ZN12QuadTreeNodeD1Ev, __ZN12QuadTreeNodeD2Ev,
+                          __ZN6PKPath10createPathEv, __ZN6PKPath13computeLengthEv, __ZN6PKPathC1EPK6CGPath, __ZN6PKPathC2EPK6CGPath,
+                          __ZN7PKCGrid11setGridSizeEiii, __ZN7PKCGrid12calcLevelSetEi, __ZN7PKCGrid12calcQuadTreeERK6CGRect,
+                          __ZN7PKCGrid12tagPixelDataEfPKhii, __ZN7PKCGrid13setVectorDataEPKhii,
+                          __ZN7PKCGrid20isGridRegionOccupiedEffff, __ZN7PKCGrid28physicsBodyFromMarchingCubesERK6CGRect,
+                          __ZN7PKCGrid30physicsBodyFromSmoothedOutlineEfRK6CGSize,
+                          __ZN7PKCGrid37pathFromOutlineWithSmoothingThresholdEfffff, __ZN7PKCGrid7setDataEPKhij,
+                          __ZN7PKCGrid8traverseERiS0_i, __ZN7PKCGrid9labelGridEv, __ZN7PKCGrid9printGridEv, __ZN7PKCGridC1Ev,
+                          __ZN7PKCGridC2Ev, __ZN8QuadTree12intersectRayEffffRP12QuadTreeNode,
+                          __ZN8QuadTree14intersectPointEffRP12QuadTreeNode, __ZN8QuadTree15intersectVectorEffffRP12QuadTreeNode,
+                          __ZN8QuadTree3addEffa, __ZN8QuadTree4findEffRP12QuadTreeNode, __ZN8QuadTree6boundsERfS0_S0_S0_,
+                          __ZN8QuadTree7addLineEffffa, __ZN8QuadTreeC1Efffff, __ZN8QuadTreeC2Efffff, __ZN8QuadTreeD1Ev, __ZN8QuadTreeD2Ev,
+                          __ZN9PKCAether15removeAllFieldsEv, __ZN9PKCAether9EvaluatorC1EPKS_, __ZN9PKCAether9EvaluatorC2EPKS_,
+                          __ZN9PKCAetherC1Ev, __ZN9PKCAetherC2Ev, __ZN9PKCAetherD1Ev, __ZN9PKCAetherD2Ev,
+                          __ZNK12QuadTreeNode19intersectVectorSelfEffff, __ZNK12QuadTreeNode9leafCountEv, __ZNK8QuadTree9leafCountEv,
+                          __ZNK9PKCAether10fieldCountEv, __ZNK9PKCAether9Evaluator12evalVelocityEjDv3_fS1_ffd,
+                          __ZNK9PKCAether9Evaluator14evalFieldsVec2EP17PKFieldSampleVec2i,
+                          __ZNK9PKCAether9Evaluator9evalForceEjfDv3_fS1_ffd, _fieldRepresentedObject, _getRegionOnField,
+                          _setRegionOnField, _setRepresentedObjectOnField, _snoise1, _snoise2, _snoise3, _snoise4, _srdnoise2,
+                          _srdnoise2_sincos, _srdnoise3, _srdnoise3_sincos, _srdnoise3_sincos_vector ]
+    objc-classes:       [ BoxedPhysicsShape, PKPhysicsBody, PKPhysicsContact, PKPhysicsField, PKPhysicsFieldCustomBlock, PKPhysicsFieldDrag,
+                          PKPhysicsFieldElectric, PKPhysicsFieldLinearGravity, PKPhysicsFieldMagnetic, PKPhysicsFieldNoise,
+                          PKPhysicsFieldRadialGravity, PKPhysicsFieldSpring, PKPhysicsFieldTurbulence, PKPhysicsFieldVelocity,
+                          PKPhysicsFieldVortex, PKPhysicsGrid, PKPhysicsJoint, PKPhysicsJointDistance, PKPhysicsJointPrismatic,
+                          PKPhysicsJointRevolute, PKPhysicsJointRope, PKPhysicsJointWeld, PKPhysicsWorld, PKQuadTree, PKRegion ]
+    objc-ivars:         [ BoxedPhysicsShape.points, BoxedPhysicsShape.shapeType, PKPhysicsBody._allowsRotation, PKPhysicsBody._body,
+                          PKPhysicsBody._bodyDef, PKPhysicsBody._dynamicType, PKPhysicsBody._edgeRadius, PKPhysicsBody._field,
+                          PKPhysicsBody._inUse, PKPhysicsBody._isPinned, PKPhysicsBody._joints, PKPhysicsBody._mask,
+                          PKPhysicsBody._outline, PKPhysicsBody._p0, PKPhysicsBody._p1, PKPhysicsBody._pathPtr,
+                          PKPhysicsBody._postStepBlock, PKPhysicsBody._quadTree, PKPhysicsBody._radius,
+                          PKPhysicsBody._representedObject, PKPhysicsBody._shapeType, PKPhysicsBody._shapes, PKPhysicsBody._size,
+                          PKPhysicsBody._world, PKPhysicsContact._bodyA, PKPhysicsContact._bodyB, PKPhysicsContact._contactNormal,
+                          PKPhysicsContact._contactPoint, PKPhysicsContact._didBegin, PKPhysicsContact._didEnd,
+                          PKPhysicsContact._impulse, PKPhysicsField._field, PKPhysicsField._override, PKPhysicsField._position,
+                          PKPhysicsField._region, PKPhysicsField._rotation, PKPhysicsField._scale,
+                          PKPhysicsFieldCustomBlock._batchBlock, PKPhysicsFieldCustomBlock._block, PKPhysicsGrid.grid,
+                          PKPhysicsGrid.quadTree, PKPhysicsJoint._baseJoint, PKPhysicsJoint._bodyA, PKPhysicsJoint._bodyB,
+                          PKPhysicsJoint._implicit, PKPhysicsJoint._inUse, PKPhysicsJointDistance._anchorA,
+                          PKPhysicsJointDistance._anchorB, PKPhysicsJointDistance._joint, PKPhysicsJointDistance._jointDef,
+                          PKPhysicsJointPrismatic._anchor, PKPhysicsJointPrismatic._axis, PKPhysicsJointPrismatic._joint,
+                          PKPhysicsJointPrismatic._jointDef, PKPhysicsJointRevolute._anchor, PKPhysicsJointRevolute._joint,
+                          PKPhysicsJointRevolute._jointDef, PKPhysicsJointRope._anchorA, PKPhysicsJointRope._anchorB,
+                          PKPhysicsJointRope._joint, PKPhysicsJointRope._jointDef, PKPhysicsJointWeld._anchor,
+                          PKPhysicsJointWeld._joint, PKPhysicsJointWeld._jointDef, PKPhysicsWorld._accumulatedDt,
+                          PKPhysicsWorld._bodies, PKPhysicsWorld._contactListener, PKPhysicsWorld._doSleep, PKPhysicsWorld._gravity,
+                          PKPhysicsWorld._joints, PKPhysicsWorld._postStepBlocks, PKPhysicsWorld._speed, PKPhysicsWorld._world,
+                          PKPhysicsWorld.drawPacket, PKQuadTree.quadTree, PKRegion._halfExtent, PKRegion._halfExtent2,
+                          PKRegion._isExclusive, PKRegion._path, PKRegion._path2, PKRegion._regionOp, PKRegion._shape, PKRegion._shape2 ]
+...

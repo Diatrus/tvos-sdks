@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DiagnosticsSupport.framework/DiagnosticsSupport
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DALogFileName, _DAMobileLogPath, _DARootLogPath, _DSArchiveClose, _DSArchiveOpen, _DSArchiveWrite,
+                          _DSHexErrorDomain, _DiagnosticLogHandleForCategory, _DiagnosticsSupportVersionNumber,
+                          _DiagnosticsSupportVersionString, __buttonHIDEventFilterCallback, _kDADefaultBufferSize,
+                          _kDADefaultStringEncoding, _kDALineBreak, _kDSArchiveErrorDomain, _kDSCallStatsEntitlement,
+                          _kDSHardwareButtonEntitlement ]
+    objc-classes:       [ DSArchivePath, DSDateFormatter, DSEntitlementUtilities, DSGeneralLogCollector, DSGeneralLogFile,
+                          DSHardwareButtonEventHandler, DSHardwareButtonEventMonitor, DSLogLine, DSMutableArchive, DSShapeView,
+                          DSTestAutomation, DSTextFile, DSThermalLogLine, DSUsageLogLine ]
+    objc-ivars:         [ DSArchivePath._prefix, DSArchivePath._root, DSArchivePath._sourceUrl, DSDateFormatter._dateFormatters,
+                          DSGeneralLogCollector._friendlyAppNamesDictionary, DSGeneralLogCollector._logFiles,
+                          DSGeneralLogCollector._logIDs, DSGeneralLogFile._currentOSVersion, DSGeneralLogFile._hardwareModel,
+                          DSGeneralLogFile._logStartDate, DSGeneralLogFile._logVersion, DSGeneralLogFile._restoreDate,
+                          DSGeneralLogFile._serialNumber, DSGeneralLogFile._updateDate, DSGeneralLogFile._url,
+                          DSHardwareButtonEventHandler._action, DSHardwareButtonEventHandler._events,
+                          DSHardwareButtonEventHandler._preventPropagation, DSHardwareButtonEventHandler._target,
+                          DSHardwareButtonEventMonitor._allowEvents, DSHardwareButtonEventMonitor._buttonEventHandlers,
+                          DSHardwareButtonEventMonitor._buttonEventQueue, DSHardwareButtonEventMonitor._buttonHIDSystemClient,
+                          DSHardwareButtonEventMonitor._eventHandlerChangeLock,
+                          DSHardwareButtonEventMonitor._systemClientCreationQueue, DSHardwareButtonEventMonitor._targetQueue,
+                          DSHardwareButtonEventMonitor._testAutomation, DSLogLine._bundleID, DSLogLine._date, DSLogLine._exception,
+                          DSLogLine._fields, DSLogLine._isUsable, DSLogLine._type, DSMutableArchive._dataBuffer, DSMutableArchive._format,
+                          DSMutableArchive._tableOfContents, DSTestAutomation._testAutomationEnabled, DSTextFile._bufferSize,
+                          DSTextFile._cancelEnumeration, DSTextFile._currentLineIndex, DSTextFile._fileHandle,
+                          DSTextFile._isEnumerating, DSTextFile._lineBreak, DSTextFile._linePositions, DSTextFile._skipCount,
+                          DSThermalLogLine._eventType, DSThermalLogLine._maxTemp ]
+...

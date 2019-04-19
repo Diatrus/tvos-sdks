@@ -1,0 +1,13 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/TextInput/TextInput_pa.bundle/TextInput_pa
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ TIKeyboardInputManager_pa ]
+    objc-ivars:         [ TIKeyboardInputManager_pa._isPhoneticLayout ]
+...

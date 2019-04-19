@@ -1,0 +1,13 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVIdleScreenServices.framework/TVIdleScreenServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVIdleScreenServicesVersionNumber, _TVIdleScreenServicesVersionString ]
+    objc-classes:       [ TVIEntryManager ]
+...

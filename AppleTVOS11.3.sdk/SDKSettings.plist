@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CanonicalName</key>
+	<string>appletvos11.3</string>
+	<key>CustomProperties</key>
+	<dict/>
+	<key>DefaultDeploymentTarget</key>
+	<string>11.3</string>
+	<key>DefaultProperties</key>
+	<dict>
+		<key>AD_HOC_CODE_SIGNING_ALLOWED</key>
+		<string>YES</string>
+		<key>CODE_SIGNING_REQUIRED</key>
+		<string>NO</string>
+		<key>CODE_SIGN_ENTITLEMENTS</key>
+		<string></string>
+		<key>DEAD_CODE_STRIPPING</key>
+		<string>YES</string>
+		<key>DEFAULT_COMPILER</key>
+		<string>com.apple.compilers.llvm.clang.1_0</string>
+		<key>DEPLOYMENT_TARGET_SUGGESTED_VALUES</key>
+		<array>
+			<string>9.0</string>
+			<string>9.1</string>
+			<string>9.2</string>
+			<string>10.0</string>
+			<string>10.1</string>
+			<string>10.2</string>
+			<string>11.0</string>
+			<string>11.2</string>
+			<string>11.3</string>
+		</array>
+		<key>ENTITLEMENTS_REQUIRED</key>
+		<string>YES</string>
+		<key>GCC_THUMB_SUPPORT</key>
+		<string>YES</string>
+		<key>KASAN_DEFAULT_CFLAGS</key>
+		<string>-DKASAN=1 -fsanitize=address -mllvm -asan-globals-live-support -mllvm -asan-force-dynamic-shadow</string>
+		<key>PLATFORM_NAME</key>
+		<string>appletvos</string>
+		<key>SUPPORTED_DEVICE_FAMILIES</key>
+		<string>3</string>
+		<key>TVOS_DEPLOYMENT_TARGET</key>
+		<string>11.3</string>
+	</dict>
+	<key>DisplayName</key>
+	<string>tvOS 11.3</string>
+	<key>IsBaseSDK</key>
+	<string>YES</string>
+	<key>MaximumDeploymentTarget</key>
+	<string>11.3.99</string>
+	<key>MinimalDisplayName</key>
+	<string>11.3</string>
+	<key>PropertyConditionFallbackNames</key>
+	<array>
+		<string>embedded</string>
+	</array>
+	<key>Version</key>
+	<string>11.3</string>
+</dict>
+</plist>

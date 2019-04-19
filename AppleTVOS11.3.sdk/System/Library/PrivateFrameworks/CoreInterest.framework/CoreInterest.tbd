@@ -1,0 +1,37 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreInterest.framework/CoreInterest
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CoreInterestVersionNumber, _CoreInterestVersionString, _IFClientAny, _IFTermAny, _IFTypeAny, _errorCallback,
+                          _traceCallback ]
+    objc-classes:       [ IFCentroidCommon, IFCentroidDataStore, IFCentroidModel, IFCentroidModelParameters, IFCentroidScoringParameters,
+                          IFCentroidVolatileStore, IFDataStore, IFDataStorePaths, IFDataStoreQuery, IFFeature, IFFeatureMatch,
+                          IFFeatureVector, IFGraphDataStore, IFIndication, IFLogChannel, IFLogging, IFManager, IFPropagatedScoreEngine,
+                          IFPropagatedScoreEngineAttenuation, IFPropagatedScoreEngineNaive, IFQuery, IFSensedScoreEngine,
+                          IFSensedScoreEngineNaive, IFSensedScoreEnginePower, IFSensedScoreEngineSigmoid, IFTemporalScoreEngine,
+                          IFTemporalScoreEngineExponential, IFTemporalScoreEngineNaive, IFTopic, IFTopicManager, IFVector,
+                          IFVectorOperation, IFVectorOperationScalar, IFVectorOperations ]
+    objc-ivars:         [ IFCentroidModel._parameters, IFCentroidModel._store, IFCentroidModelParameters._engagementCount,
+                          IFCentroidModelParameters._engagementRate, IFCentroidModelParameters._idfWeightScheme,
+                          IFCentroidModelParameters._minimumTermFrequency, IFCentroidModelParameters._norm,
+                          IFCentroidModelParameters._termWeightScheme, IFCentroidScoringParameters._divergence,
+                          IFCentroidScoringParameters._scale, IFCentroidVolatileStore.centroid,
+                          IFCentroidVolatileStore.centroidVector, IFCentroidVolatileStore.documents, IFCentroidVolatileStore.features,
+                          IFCentroidVolatileStore.modelParameters, IFDataStore._database, IFDataStore._path, IFDataStore._schemaVersion,
+                          IFDataStoreQuery._error, IFDataStoreQuery._preparation, IFDataStoreQuery._query, IFDataStoreQuery._step,
+                          IFFeature._client, IFFeature._score, IFFeature._term, IFFeature._type, IFFeatureMatch._client,
+                          IFFeatureMatch._term, IFFeatureMatch._type, IFFeatureVector._date, IFFeatureVector._features,
+                          IFFeatureVector._interactionType, IFFeatureVector._interval, IFIndication._client, IFIndication._date,
+                          IFIndication._score, IFLogChannel._logLevel, IFLogChannel._name, IFQuery._clients, IFQuery._handler,
+                          IFQuery._maxDepth, IFQuery._propagatedScoreEngine, IFQuery._referenceDate, IFQuery._root,
+                          IFQuery._sensedScoreEngine, IFQuery._temporalScoreEngine, IFQuery._timeToLive, IFTopic._activations,
+                          IFTopic._identifier, IFTopic._indications, IFTopic._indirectActivations, IFTopic._label, IFTopic._name,
+                          IFTopic._score, IFTopic.children, IFTopic.parent, IFVector._length, IFVector._vector, IFVectorOperation._b,
+                          IFVectorOperationScalar._b ]
+...

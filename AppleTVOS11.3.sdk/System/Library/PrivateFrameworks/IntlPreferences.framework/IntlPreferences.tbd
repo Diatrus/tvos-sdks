@@ -1,0 +1,30 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences
+current-version:       227.5.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _GetNSFriendlySeparator, _IPLoadUIKitFramework, _IPNameOrderFamilyNameFirstKey, _IPNameOrderGivenNameFirstKey,
+                          _IPNameOrderKey, _IPNameOrderUnsetKey, _IPPreferNicknamesDisabled, _IPPreferNicknamesEnabled,
+                          _IPPreferNicknamesKey, _IPShortNameEnabledKey, _IPShortNameFormatFamilyNameGivenInitialKey,
+                          _IPShortNameFormatFamilyOnlyKey, _IPShortNameFormatGivenNameFamilyInitialKey,
+                          _IPShortNameFormatGivenOnlyKey, _IPShortNameFormatKey, _IPShortNameFormatUnsetKey, _IPShortNamesDisabled,
+                          _IPShortNamesEnabled, _IPUIKeyboardCanonicalInputModeName, _IPUIKeyboardInputModeController,
+                          _IPUIKeyboardInputModeGetBaseLanguage, _IPUIKeyboardInputModeGetIdentifierWithKeyboardLayouts,
+                          _IPUIKeyboardInputModeGetLanguageWithRegion, _IPUIKeyboardInputModeGetNormalizedIdentifier,
+                          _IPUIKeyboardInputMode_Intl, _IPUIKeyboardPreferencesController, _IUIntlPreferencesVersionNumber,
+                          _IUIntlPreferencesVersionString, _IntlPreferencesValue, _IntlSetPreferencesValue,
+                          _NSPersonNameDefaultDisplayNameOrderKey, _NSPersonNameDefaultNamePreferencesDomain,
+                          _NSPersonNameDefaultShortNameEnabledKey, _NSPersonNameDefaultShortNameFormatKey,
+                          _NSPersonNameDefaultShouldPreferNicknamesKey, _NSPersonNamePreferencesDidChangeNotification ]
+    objc-classes:       [ IPFoundationNamePreferenceInfoProvider, IPOSXABNamePreferenceInfoProvider,
+                          IPiOSABNamePreferenceInfoProvider, ISMigrator, IntlUtility, NSPersonNameComponentsFormatterPreferences ]
+    objc-ivars:         [ ISMigrator._currentVersion, ISMigrator._platform, ISMigrator._preferencesAfterMigration,
+                          ISMigrator._preferencesBeforeMigration, ISMigrator._previousVersion, IntlUtility.mBidiLanguagesArray,
+                          IntlUtility.mBidiTestedLanguagesArray, IntlUtility.mDisplayLanguageCachePtr,
+                          IntlUtility.mDisplayLanguageCacheUsed ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagement
+current-version:       1.26
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _RMConfigurationEntitlement, _RMEnrollmentPlistName, _RMErrorChainFromError, _RMErrorDomain,
+                          _RMErrorHTTPStatusCodeKey, _RMErrorRequestUUIDKey, _RMGetDeviceUUID, _RMIsAppleInternal, _RMMetadataPath,
+                          _RMMetadataPlistName, _RMRootPath, _RMStringForBool, _RMTemporaryDirectoryURLForURL, _RMToolEntitlement,
+                          _RemoteManagementVersionNumber, _RemoteManagementVersionString, _kRMDeviceIdentitySCRTCapability,
+                          _kRMMessageMDMSignatureHeader, _kRMPushDictionaryKey, _kRMPushMagicMismatchKey, _kRMPushMagicMismatchMaxAge,
+                          _kRMPushServiceBootstrapNameDev, _kRMPushServiceBootstrapNameProd ]
+    objc-classes:       [ RMConfigurationClient, RMConfigurationServer, RMConfigurationServerDelegate, RMCryptoUtils, RMKeychainAccess,
+                          RMLog, RMMetadataStore, RMSCRTUtils, RMToolClient, RMToolServer, RMToolServerDelegate ]
+    objc-ivars:         [ RMConfigurationClient._connection, RMConfigurationServer._delegate, RMConfigurationServer._listener,
+                          RMConfigurationServerDelegate._target, RMMetadataStore.__kvStore, RMMetadataStore._metadataFilePath,
+                          RMToolClient._connection, RMToolServer._delegate, RMToolServer._listener, RMToolServerDelegate._target ]
+...

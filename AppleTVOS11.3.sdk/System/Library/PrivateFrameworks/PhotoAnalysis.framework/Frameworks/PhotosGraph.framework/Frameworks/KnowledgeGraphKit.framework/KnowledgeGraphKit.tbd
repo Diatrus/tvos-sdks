@@ -1,0 +1,44 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Frameworks/PhotosGraph.framework/Frameworks/KnowledgeGraphKit.framework/KnowledgeGraphKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    allowable-clients:  [ PhotosGraph ]
+    symbols:            [ _KnowledgeGraphKitVersionNumber, _KnowledgeGraphKitVersionString, _MABenchmarkGetAppMallocMemory,
+                          _MABenchmarkGetAppMemory, _MABenchmarkGetHostMemory, _MAErrorDomain, _edgePrintableSchema,
+                          _isElementMatchingDefinition, _kMADatabaseModelPropertyTypeEdge, _kMADatabaseModelPropertyTypeNode,
+                          _kMAElementDefaultDomain, _kMAElementDefaultWeight, _kMAElementIgnoreDomain, _kMAElementInvalidDomain,
+                          _kMAElementInvalidIdentifier, _kMAElementLabelAny, _kMAElementLabelNone, _kMAGraphDataExtension,
+                          _kMAGraphJSONExtension, _kMAGraphMLExtension, _kMAGraphPersistentStoreExtension, _nodePrintableSchema ]
+    objc-classes:       [ MAAbstractEdge, MAAbstractGraph, MAAbstractNode, MADatabase, MAEdge, MAElement, MAError, MAGraph, MALogging,
+                          MAMemoryFootprint, MAModelEdge, MAModelEdgeProperty, MAModelElement, MAModelGraph, MAModelNode, MAModelNodeProperty,
+                          MAModelProperty, MANode, MAPath, MAPaths, MAStatisticsElapsedTime, MASubGraph ]
+    objc-ivars:         [ MAAbstractEdge._labelString, MAAbstractNode._labelString, MADatabase._batchCounter, MADatabase._fileURL,
+                          MADatabase._managedObjectContext, MADatabase._managedObjectModel, MADatabase._markerCounter,
+                          MADatabase._persistentStoreCoordinator, MADatabase._predicateIdentifierAndKeyTemplate,
+                          MADatabase._predicateIdentifierTemplate, MADatabase._predicateIdentifiersTemplate, MAEdge._sourceNode,
+                          MAEdge._targetNode, MAElement._domain, MAElement._graph, MAElement._identifier, MAElement._label,
+                          MAElement._needsPropertiesLoading, MAElement._properties, MAElement._weight, MAGraph._accessQueue,
+                          MAGraph._edgesByIdentifier, MAGraph._edgesByLabel, MAGraph._fragmentedEdgeIdentifiers,
+                          MAGraph._fragmentedNodeIdentifiers, MAGraph._identifier, MAGraph._keepsLoadedDomains, MAGraph._labelStrings,
+                          MAGraph._labelsForStrings, MAGraph._lastEdgeIdentifier, MAGraph._lastNodeIdentifier, MAGraph._nodesByDomain,
+                          MAGraph._nodesByIdentifier, MAGraph._nodesByLabel, MAGraph._persistentStore, MAGraph._version,
+                          MALogging._loggingConnection, MAMemoryFootprint._allEdgesSize, MAMemoryFootprint._allKeys,
+                          MAMemoryFootprint._allNodesSize, MAMemoryFootprint._allValues, MAMemoryFootprint._arrayCount,
+                          MAMemoryFootprint._basicEdgeSize, MAMemoryFootprint._basicHashCount,
+                          MAMemoryFootprint._basicHashValueStoreCount, MAMemoryFootprint._basicNodeSize,
+                          MAMemoryFootprint._countOfNodesWithAtMostEightEdges, MAMemoryFootprint._dictionaryCount,
+                          MAMemoryFootprint._edgeCount, MAMemoryFootprint._graph, MAMemoryFootprint._graphSize,
+                          MAMemoryFootprint._halfEdgeCount, MAMemoryFootprint._maximumEdgeCountInNode, MAMemoryFootprint._nodeCount,
+                          MAMemoryFootprint._orderedSetCount, MANode._edges, MAPath._edges, MAPath._nodes, MAPaths._paths,
+                          MAStatisticsElapsedTime._elapsedCounter, MAStatisticsElapsedTime._elapsedStart,
+                          MAStatisticsElapsedTime._elapsedTime, MAStatisticsElapsedTime._lastBeginTransactionTime,
+                          MAStatisticsElapsedTime._lastEndTransactionTime, MASubGraph._edgesByIdentifier, MASubGraph._edgesByLabel,
+                          MASubGraph._edgesByName, MASubGraph._graph, MASubGraph._nodesByIdentifier, MASubGraph._nodesByLabel,
+                          MASubGraph._nodesByName, MASubGraph._nodesByNameGroupByNodes ]
+...

@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/VideoCodecs/VCPHEVC.videocodec
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _HEVCVideoDecoder_CreateInstance, _VCPHEVCRegisterDecoder, _VCPHEVCRegisterEncoder ]
+...

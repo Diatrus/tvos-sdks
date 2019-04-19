@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/LocalAuthentication.framework/Support/DaemonUtils.framework/DaemonUtils
+current-version:       425.50.68
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DaemonUtilsVersionNumber, _DaemonUtilsVersionString, _LANVRAMNamespaceStartupManager ]
+    objc-classes:       [ DaemonUtils, InstalledAppsCache, LANVRAM ]
+    objc-ivars:         [ DaemonUtils._serverQueue, InstalledAppsCache._appCache, InstalledAppsCache._nameCache ]
+...

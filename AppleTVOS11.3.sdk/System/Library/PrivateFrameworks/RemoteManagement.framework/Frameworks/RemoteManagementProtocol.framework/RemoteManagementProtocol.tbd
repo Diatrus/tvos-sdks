@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementProtocol.framework/RemoteManagementProtocol
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _RemoteManagementProtocolVersionNumber, _RemoteManagementProtocolVersionString ]
+    objc-classes:       [ RMPChangeRequest, RMPCheckInProtocolAuthenticateRequest, RMPCheckInProtocolCapabilitiesRequest,
+                          RMPCheckInProtocolCheckOutRequest, RMPCheckInProtocolTokenUpdateRequest, RMPCommandsRequest, RMPErrorResponse,
+                          RMPRemoteManagementRequest, RMPRemoteManagementResponse, RMPSetRequest, RMPStatusRequest ]
+    objc-ivars:         [ RMPChangeRequest._removeDeclarations, RMPChangeRequest._syncToken, RMPChangeRequest._updateDeclarations,
+                          RMPCheckInProtocolAuthenticateRequest._IMEI, RMPCheckInProtocolAuthenticateRequest._MEID,
+                          RMPCheckInProtocolAuthenticateRequest._UDID, RMPCheckInProtocolAuthenticateRequest._buildVersion,
+                          RMPCheckInProtocolAuthenticateRequest._messageType, RMPCheckInProtocolAuthenticateRequest._osVersion,
+                          RMPCheckInProtocolAuthenticateRequest._productName, RMPCheckInProtocolAuthenticateRequest._serialNumber,
+                          RMPCheckInProtocolAuthenticateRequest._topic, RMPCheckInProtocolCapabilitiesRequest._UDID,
+                          RMPCheckInProtocolCapabilitiesRequest._clientCapabilities,
+                          RMPCheckInProtocolCapabilitiesRequest._messageType, RMPCheckInProtocolCheckOutRequest._UDID,
+                          RMPCheckInProtocolCheckOutRequest._messageType, RMPCheckInProtocolCheckOutRequest._topic,
+                          RMPCheckInProtocolTokenUpdateRequest._UDID, RMPCheckInProtocolTokenUpdateRequest._awaitingConfiguration,
+                          RMPCheckInProtocolTokenUpdateRequest._messageType, RMPCheckInProtocolTokenUpdateRequest._pushMagic,
+                          RMPCheckInProtocolTokenUpdateRequest._token, RMPCheckInProtocolTokenUpdateRequest._topic,
+                          RMPCheckInProtocolTokenUpdateRequest._unlockToken, RMPCheckInProtocolTokenUpdateRequest._userShortName,
+                          RMPCommandsRequest._addCommands, RMPCommandsRequest._removeCommands, RMPErrorResponse._errorCode,
+                          RMPErrorResponse._errorReason, RMPRemoteManagementRequest._requestType,
+                          RMPRemoteManagementRequest._requestUUID, RMPRemoteManagementResponse._UDID,
+                          RMPRemoteManagementResponse._errorChain, RMPRemoteManagementResponse._requestUUID,
+                          RMPRemoteManagementResponse._status, RMPRemoteManagementResponse._syncToken,
+                          RMPRemoteManagementResponse._userShortName, RMPSetRequest._declarations, RMPSetRequest._syncToken,
+                          RMPStatusRequest._UDID, RMPStatusRequest._messages, RMPStatusRequest._requestType,
+                          RMPStatusRequest._userShortName ]
+...

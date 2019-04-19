@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AIDAAccountPropertyAltDSID, _AIDAAccountPropertyDSID, _AIDAErrorDomain, _AIDAServiceTypeCloud,
+                          _AIDAServiceTypeFaceTime, _AIDAServiceTypeGameCenter, _AIDAServiceTypeMessages, _AIDAServiceTypeStore,
+                          _AppleIDAuthenticationAppleIDSettingsTokenIdentifier, _AppleIDAuthenticationPBTokenIdentifier,
+                          _AppleIDAuthenticationServicesKey, _AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier,
+                          _AppleIDAuthenticationiCloudSettingsTokenIdentifier, __AIDALogSystem, _kDeviceProvisioningMIDKey,
+                          _kDeviceProvisioningOTPKey, _kLegacyAlternateDSIDKey, _kiCloudPersonIDKey, _kiCloudPrimaryAccountKey ]
+    objc-classes:       [ AIDAMutableServiceContext, AIDAServiceContext, AIDAServiceOwnersManager, MockServiceOwner ]
+    objc-ivars:         [ AIDAServiceContext._authenticationResults, AIDAServiceContext._shouldForceOperation,
+                          AIDAServiceContext._viewController, AIDAServiceOwnersManager._accountStore,
+                          AIDAServiceOwnersManager._serviceOwners, MockServiceOwner._accountStore, MockServiceOwner._serviceType,
+                          MockServiceOwner._signInHandler, MockServiceOwner._signOutHandler ]
+...

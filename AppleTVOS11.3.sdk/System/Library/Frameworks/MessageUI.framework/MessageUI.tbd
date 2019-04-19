@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/MessageUI.framework/MessageUI
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    allowable-clients:  [ MessageUI ]
+    objc-classes:       [ MFMailComposeViewController ]
+...

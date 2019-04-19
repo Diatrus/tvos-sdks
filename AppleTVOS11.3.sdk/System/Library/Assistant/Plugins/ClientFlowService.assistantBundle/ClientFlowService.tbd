@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Assistant/Plugins/ClientFlowService.assistantBundle/ClientFlowService
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _LastBackgroundActivityDateUserDefaultsKnowledgeStoreKey,
+                          _MinimumWaitInSecondsBeforeNextBackgroundActivityUserDefaultsKnowledgeStoreKey, _kAlgorithm,
+                          _kAlgorithmBlockSize, _kAlgorithmIVSize, _kAlgorithmKeySize, _kCFSecurityUtilsErrorDomain, _kPBKDFRounds,
+                          _kPBKDFSaltSize ]
+    objc-classes:       [ CFAppAuthorizationRequestHandler, CFAppVocabularySearchRequestHandler, CFBackgroundActionService,
+                          CFFileCacheStore, CFGetActiveWorkoutApplicationIdentifierHandler, CFLogQueuer, CFPEXQueryHandler,
+                          CFRemoveScriptCommandHandler, CFRequestHandler, CFScriptDownloadManager, CFSecurityUtils, CFServiceConnector,
+                          CFServiceHelper, CFSiriKitVocabularyRetriever, CFUpdateScriptsCommandHandler ]
+...

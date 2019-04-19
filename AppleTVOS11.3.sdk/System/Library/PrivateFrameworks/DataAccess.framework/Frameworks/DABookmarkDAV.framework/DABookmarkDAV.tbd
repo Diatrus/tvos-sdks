@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DABookmarkDAV.framework/DABookmarkDAV
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ BookmarkDAVAccount, BookmarkDAVLocalDBHelper ]
+    objc-ivars:         [ BookmarkDAVAccount._bookmarkDAVAccountVersion, BookmarkDAVAccount._checkValidityTaskGroup,
+                          BookmarkDAVAccount._curLogger ]
+...

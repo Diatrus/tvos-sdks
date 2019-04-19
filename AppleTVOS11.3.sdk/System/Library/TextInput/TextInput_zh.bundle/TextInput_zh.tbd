@@ -1,0 +1,78 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/TextInput/TextInput_zh.bundle/TextInput_zh
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _kDefaultLayoutTag, _kDisambiguationLayoutTag, _kFacemarkLookupKey, _kGB18030LookupKey,
+                          _kHalfWidthPunctuationLayoutTag, _kSeparatorLayoutTag, _kSimplifiedChinese, _kTraditionalChinese,
+                          _kUnicodeLookupKey ]
+    objc-classes:       [ CIMCandidateData, RecognizeDrawingOperation, RecognizePredictionOperation, RecognizerProvider,
+                          TIConversionHistory, TIConvertedCandidate, TIInputManagerHandwriting, TIInputManagerHandwritingSimplified,
+                          TIInputManagerHandwritingTraditional, TIKeyboardHandwritingSpecialization, TIKeyboardInputManagerCangjie,
+                          TIKeyboardInputManagerSimplifiedWubi, TIKeyboardInputManagerTraditionalWubi, TIKeyboardInputManagerWubi,
+                          TIKeyboardInputManager_zh, TIKeyboardInputManager_zh_Phonetic, TIKeyboardInputManager_zh_Pinyin,
+                          TIKeyboardInputManager_zh_ShapeBased, TIKeyboardInputManager_zh_hans_Pinyin,
+                          TIKeyboardInputManager_zh_hant_Pinyin, TIKeyboardInputManager_zh_hant_Zhuyin, TIWordSearchCangjie,
+                          TIWordSearchPinyin, TIWordSearchPinyinOperationGetCandidates, TIWordSearchShapeBased, TIWordSearchWubihua ]
+    objc-ivars:         [ CIMCandidateData._candidateInfoCache, CIMCandidateData._inputMode, CIMCandidateData._sortingMethod,
+                          CIMCandidateData._storedCandidates, RecognizeDrawingOperation._candidates,
+                          RecognizeDrawingOperation._history, RecognizeDrawingOperation._im,
+                          RecognizeDrawingOperation._recognitionType, RecognizeDrawingOperation._recognizer,
+                          RecognizeDrawingOperation._strokes, RecognizePredictionOperation._candidateRefsDictionary,
+                          RecognizePredictionOperation._candidates, RecognizePredictionOperation._committedCandidates,
+                          RecognizePredictionOperation._inputManager, RecognizePredictionOperation._predictionOptions,
+                          RecognizePredictionOperation._prefixContext, RecognizePredictionOperation._proactiveTriggers,
+                          RecognizePredictionOperation._recognizer, RecognizerProvider._recognitionType,
+                          RecognizerProvider._recognizer, RecognizerProvider._recognizerDidLoadBlock,
+                          TIConversionHistory._convertedCandidates, TIConversionHistory._inputChangedSinceLastConversion,
+                          TIConversionHistory._invalid, TIConversionHistory._mutableConvertedCandidateRefs,
+                          TIConversionHistory._mutableConvertedCandidateText, TIConversionHistory._revertCount,
+                          TIConvertedCandidate._candidate, TIConvertedCandidate._convertedInput, TIConvertedCandidate._geometryData,
+                          TIConvertedCandidate._replacedAmbiguousPinyinSyllable,
+                          TIConvertedCandidate._replacementUnambiguousPinyinSyllable, TIConvertedCandidate._touchData,
+                          TIInputManagerHandwriting._candidateData, TIInputManagerHandwriting._candidateRefsDictionary,
+                          TIInputManagerHandwriting._candidates, TIInputManagerHandwriting._committedCandidates,
+                          TIInputManagerHandwriting._contactObserver, TIInputManagerHandwriting._facemarkCandidates,
+                          TIInputManagerHandwriting._isInCompletionMode, TIInputManagerHandwriting._proactiveTriggers,
+                          TIInputManagerHandwriting._recognizerProvider, TIInputManagerHandwriting._shouldLearnAcceptedCandidate,
+                          TIInputManagerHandwriting._showingCompletionCandidates, TIInputManagerHandwriting._showingFacemarks,
+                          TIInputManagerHandwriting._userDictionaryObserver, TIInputManagerHandwriting._userDrawing,
+                          TIKeyboardInputManagerCangjie._suchengEnabled, TIKeyboardInputManagerCangjie._supportsEnglish,
+                          TIKeyboardInputManagerWubi._autoConfirmationCandidate, TIKeyboardInputManager_zh._candidateData,
+                          TIKeyboardInputManager_zh._currentKeyHint, TIKeyboardInputManager_zh._decimalPointState,
+                          TIKeyboardInputManager_zh._isAlphabeticPlane, TIKeyboardInputManager_zh._isInCompletionMode,
+                          TIKeyboardInputManager_zh._language, TIKeyboardInputManager_zh._modeName,
+                          TIKeyboardInputManager_zh._operationQueue, TIKeyboardInputManager_zh._pairedPunctuationOpenQuote,
+                          TIKeyboardInputManager_zh._pairedPunctuationSelectedText,
+                          TIKeyboardInputManager_zh._shouldLearnAcceptedCandidate, TIKeyboardInputManager_zh._wordSearch,
+                          TIKeyboardInputManager_zh_Phonetic._acceptingCandidate, TIKeyboardInputManager_zh_Phonetic._candidateData,
+                          TIKeyboardInputManager_zh_Phonetic._composedTextBeforeFirstSyllableLocked,
+                          TIKeyboardInputManager_zh_Phonetic._conversionHistory,
+                          TIKeyboardInputManager_zh_Phonetic._filterCandidatesUsingInputIndex,
+                          TIKeyboardInputManager_zh_Phonetic._isCandidateSelected,
+                          TIKeyboardInputManager_zh_Phonetic._isInAmbiguousMode,
+                          TIKeyboardInputManager_zh_Phonetic._lockingFirstPinyinSyllable,
+                          TIKeyboardInputManager_zh_Phonetic._logger, TIKeyboardInputManager_zh_Phonetic._operationQueue,
+                          TIKeyboardInputManager_zh_Phonetic._pinyinSyllableCandidates,
+                          TIKeyboardInputManager_zh_Phonetic._remainingInput,
+                          TIKeyboardInputManager_zh_Phonetic._replacedAmbiguousPinyinSyllable,
+                          TIKeyboardInputManager_zh_Phonetic._replacementUnambiguousPinyinSyllable,
+                          TIKeyboardInputManager_zh_Phonetic._selectedPinyinSyllableCandidateIndex,
+                          TIKeyboardInputManager_zh_Phonetic._usesCandidateSelection,
+                          TIKeyboardInputManager_zh_ShapeBased._keepRemainingInput,
+                          TIKeyboardInputManager_zh_ShapeBased._previousActionWasAutoConfirmation,
+                          TIKeyboardInputManager_zh_ShapeBased._remainingInput, TIKeyboardInputManager_zh_ShapeBased._searchString,
+                          TIKeyboardInputManager_zh_hant_Zhuyin._assertDefaultKeyPlane,
+                          TIKeyboardInputManager_zh_hant_Zhuyin._dynamic, TIWordSearchCangjie._suchengEnabled,
+                          TIWordSearchCangjie._supportsEnglish, TIWordSearchPinyin._contactObserver,
+                          TIWordSearchPinyin._dictionaryUpdateObserver, TIWordSearchPinyin._fuzzyPinyinEnabled,
+                          TIWordSearchPinyin._fuzzyPinyinPairs, TIWordSearchPinyin._shuangpinType,
+                          TIWordSearchPinyin._tenKeyPinyinEnabled,
+                          TIWordSearchPinyinOperationGetCandidates._initiallyHiddenCandidates,
+                          TIWordSearchPinyinOperationGetCandidates._selectedHiddenCandidateIndex ]
+...

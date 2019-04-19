@@ -1,0 +1,59 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SetupAssistant.framework/SetupAssistant
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _BFFBuddyDidRestoreSafeHavenNotification, _BFFSettingsManagerCurrentVersion,
+                          _BYAssistantFixUpVoiceTriggerStateIfNeeded, _BYAssistantScreenShouldBeShownInSetupAssistant,
+                          _BYAssistantScreenShouldRunForPHSUpgrade, _BYBuddyAssistantPHSOfferedKey, _BYBuddyAssistantPresentedKey,
+                          _BYBuddyDoneKey, _BYBuddyFinishedInitialRunKey, _BYBuddyIOSCurrentVersion, _BYBuddyIOSVersionKey,
+                          _BYBuddyLastExitKey, _BYBuddyNotBackedUpIdentifier, _BYBuddyRunDiagnosticsMiniBuddy, _BYBuddyRunHSA2MiniBuddy,
+                          _BYBuddyRunKeychainSyncMiniBuddy, _BYBuddyRunMesaMiniBuddy, _BYBuddyRunPaymentMiniBuddy,
+                          _BYBuddyRunSilentICDPUpgrade, _BYBuddyRunStandardMiniBuddy, _BYBuddyTVOSCurrentVersion,
+                          _BYBuddyTVOSVersionKey, _BYClearLaunchSentinel, _BYDaemonCreateMetadataArchive, _BYDataStashCreate,
+                          _BYDeviceSetupSourceSessionFinishedKey, _BYDeviceSetupSourceSessionPercentCompleteKey,
+                          _BYDeviceSetupSourceSessionPhaseKey, _BYDeviceSetupSourceSessionTimeRemainingKey,
+                          _BYFlowSkipIdentifierAppleID, _BYFlowSkipIdentifierApplePay, _BYFlowSkipIdentifierFaceID,
+                          _BYFlowSkipIdentifierPasscode, _BYFlowSkipIdentifierSiri, _BYFlowSkipIdentifierTouchID, _BYMetadataFromBackup,
+                          _BYMetadataFromDataArchive, _BYObserveFinishSetupTriggers, _BYProcessNameForPID, _BYSetLaunchSentinel,
+                          _BYSetupAssistantBundleIdentifier, _BYSetupAssistantEnsureSilentLoginUpgrade,
+                          _BYSetupAssistantExitedDarwinNotification, _BYSetupAssistantFinishedDarwinNotification,
+                          _BYSetupAssistantHasCompletedInitialRun, _BYSetupAssistantIsRunningSilentTokenUpgrade,
+                          _BYSetupAssistantLaunchedDarwinNotification, _BYSetupAssistantNeedsToRun,
+                          _BYSetupAssistantPrepareLaunchSentinel, _BYSetupAssistantSilentTokenUpgradeCompletedNotification,
+                          _BYSetupAssistantSilentTokenUpgradeInProgressKey, _BYSetupAssistantUISessionNoLongerExclusiveNotification,
+                          _BYTigrisVersion, _Daemon_BYSetupAssistantNeedsToRun, _DiagnosticsShouldSubmitNotification,
+                          __BYIsInternalInstall, __BYLoggingEnabled, __BYLoggingFacility ]
+    objc-classes:       [ BFFPreferencesController, BFFSettingsManager, BYAppleIDAccountsManager, BYBackupMetadata,
+                          BYBuddyDaemonCloudSyncClient, BYBuddyDaemonGeneralClient, BYBuddyDaemonProximitySourceClient,
+                          BYBuddyDaemonProximityTargetClient, BYCapabilities, BYDeviceSetupSourceSession, BYFlowSkipController,
+                          BYLicenseAgreement, BYManagedAppleIDBootstrap, BYNetworkMonitor, BYOnBoardingDirector, BYSetupStateManager,
+                          BYXPCActivity, BYXPCActivityRegistrar ]
+    objc-ivars:         [ BFFPreferencesController._preferences, BFFSettingsManager._stashedAssistantEnabled,
+                          BFFSettingsManager._stashedAssistantVoiceTriggerEnabled, BFFSettingsManager._stashedButtonHaptics,
+                          BFFSettingsManager._stashedFlowSkipIdentifiers, BFFSettingsManager._stashedLocationServicesEnabled,
+                          BFFSettingsManager._stashedManagedConfigurationSettings, BFFSettingsManager._stashedPaths,
+                          BFFSettingsManager._stashedPreferences, BFFSettingsManager._stashedWatchData,
+                          BYAppleIDAccountsManager._aaService, BYAppleIDAccountsManager._appleIDLoginPluginManager,
+                          BYAppleIDAccountsManager._storedLoginContext, BYBackupMetadata._appAnalyticsOptIn,
+                          BYBackupMetadata._deviceAnalyticsOptIn, BYBackupMetadata._findMyiPhoneOptIn, BYBackupMetadata._has,
+                          BYBackupMetadata._homeButtonHapticKind, BYBackupMetadata._locationServicesOptIn,
+                          BYBackupMetadata._nanoRegistryData, BYBackupMetadata._siriOptIn, BYBackupMetadata._version,
+                          BYBuddyDaemonCloudSyncClient._connection, BYBuddyDaemonCloudSyncClient._delegate,
+                          BYBuddyDaemonGeneralClient._connection, BYBuddyDaemonGeneralClient._connectionLock,
+                          BYBuddyDaemonProximitySourceClient._connection, BYBuddyDaemonProximitySourceClient._delegate,
+                          BYBuddyDaemonProximityTargetClient._connection, BYBuddyDaemonProximityTargetClient._delegate,
+                          BYDeviceSetupSourceSession._backupProgress, BYDeviceSetupSourceSession._client,
+                          BYDeviceSetupSourceSession._currentPhase, BYDeviceSetupSourceSession._hasBackupCompleted,
+                          BYDeviceSetupSourceSession._hasSyncCompleted, BYDeviceSetupSourceSession._messageSession,
+                          BYDeviceSetupSourceSession._progressHandler, BYDeviceSetupSourceSession._sendObjectHandler,
+                          BYDeviceSetupSourceSession._syncProgress, BYDeviceSetupSourceSession._timeRemaining,
+                          BYManagedAppleIDBootstrap._authContext, BYNetworkMonitor._currentNetworkType,
+                          BYNetworkMonitor._networkTypeBlocks, BYNetworkMonitor._networkTypeQueue, BYNetworkMonitor._observers,
+                          BYNetworkMonitor._reachability, BYNetworkMonitor._roaming, BYXPCActivity._xpcActivity ]
+...

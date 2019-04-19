@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DuetActivitySchedulerUI.framework/DuetActivitySchedulerUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DuetActivitySchedulerUIVersionNumber, _DuetActivitySchedulerUIVersionString ]
+    objc-classes:       [ _DASUIFetchContentInBackgroundAction, _DASUIFetchContentInBackgroundActionResponse,
+                          _DASUIHandleRemoteNotificationAction ]
+...

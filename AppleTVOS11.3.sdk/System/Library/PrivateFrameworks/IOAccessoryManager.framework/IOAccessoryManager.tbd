@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IOAccessoryManager.framework/IOAccessoryManager
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _IOAccessoryManagerVersionNumber, _IOAccessoryManagerVersionString, _IOAccessoryStartVoltageEventMonitor ]
+...

@@ -1,0 +1,22 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AddErrorToDictionary, _DESAggregatorLogEvaluation, _DESAggregatorLogRecording, _DESApplyAsynchronousSequence,
+                          _DESDiagnosticsSubmissionAllowed, _DESGetDeviceClass, _DESGetDeviceID, _DESGetDeviceType, _DESGetOSVersion,
+                          _DESIsInternalInstall, _DESPathHasFileVault, _DESServiceAvailable, _DESServiceGetXPCInterface,
+                          _DESSubmissionLogDirectoryURL, _DESSubmissionLogFileURLs, _DESSubmissionLogGarbageCollect,
+                          _DESWriteSubmissionLog, _DistributedEvaluationVersionNumber, _DistributedEvaluationVersionString,
+                          __DESIsHorseman, _kDESDistributedEvaluationErrorDomain ]
+    objc-classes:       [ DESEvaluationSession, DESJSONPredicate, DESRecordStore ]
+    objc-ivars:         [ DESEvaluationSession._baseURL, DESEvaluationSession._dataFetchBlock, DESEvaluationSession._evaluator,
+                          DESEvaluationSession._localeIdentifier, DESEvaluationSession._postbackBaseURL, DESEvaluationSession._queue,
+                          DESEvaluationSession._recordType, DESEvaluationSession._records, DESEvaluationSession._session,
+                          DESEvaluationSession._skipPolicy, DESRecordStore._bundleId ]
+...

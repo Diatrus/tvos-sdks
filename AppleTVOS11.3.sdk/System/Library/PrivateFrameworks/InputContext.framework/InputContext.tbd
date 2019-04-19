@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/InputContext.framework/InputContext
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _InputContextVersionNumber, _InputContextVersionString, __ICMachTimeToNanoseconds, _isEquivalentDictionary ]
+    objc-classes:       [ _ICContact, _ICInputContextManager, _ICInternalSource, _ICNamedEntityStore, _ICNullLexiconManager, _ICNullSource,
+                          _ICPredictedItem, _ICPredictionManager, _ICProactiveTrigger, _ICResultCache, _ICSearchContext,
+                          _ICTransientLexicon ]
+    objc-ivars:         [ _ICContact._cities, _ICContact._firstName, _ICContact._jobTitle, _ICContact._lastName, _ICContact._middleName,
+                          _ICContact._nickname, _ICContact._organizationName, _ICContact._phoneticFirstName,
+                          _ICContact._phoneticLastName, _ICContact._phoneticMiddleName, _ICContact._relations, _ICContact._score,
+                          _ICContact._streets, _ICInputContextManager._allPredictionSources,
+                          _ICInputContextManager._durableNamedEntityLexicon, _ICInputContextManager._lexiconManager,
+                          _ICInputContextManager._lexiconSource, _ICInputContextManager._predictionManager,
+                          _ICInputContextManager._recentNamedEntityLexicon, _ICNamedEntityStore._filteringBlock,
+                          _ICNamedEntityStore._lexicons, _ICNamedEntityStore._phraseLexicon,
+                          _ICNamedEntityStore._recentNamedEntityQueue, _ICNamedEntityStore._wordFilteringBlock,
+                          _ICNamedEntityStore._wordLexicon, _ICNullLexiconManager._contactObservers, _ICPredictedItem._date,
+                          _ICPredictedItem._flags, _ICPredictedItem._identifier, _ICPredictedItem._itemType, _ICPredictedItem._label,
+                          _ICPredictedItem._layoutHint, _ICPredictedItem._name, _ICPredictedItem._operationData,
+                          _ICPredictedItem._originatingBundleID, _ICPredictedItem._originatingWebsiteURL,
+                          _ICPredictedItem._predictionAge, _ICPredictedItem._score, _ICPredictedItem._shouldAggregate,
+                          _ICPredictedItem._targetBundleID, _ICPredictedItem._trigger, _ICPredictedItem._value,
+                          _ICPredictionManager._cache, _ICPredictionManager._predictionSources, _ICProactiveTrigger._attributedString,
+                          _ICProactiveTrigger._availableApps, _ICProactiveTrigger._triggerSourceType, _ICResultCache._cachedResults,
+                          _ICResultCache._start, _ICResultCache._ttlInSeconds, _ICSearchContext._applicationBundleIdentifier,
+                          _ICSearchContext._locale, _ICSearchContext._recipients, _ICTransientLexicon._count,
+                          _ICTransientLexicon._entryCount, _ICTransientLexicon._lexicon, _ICTransientLexicon._name,
+                          _ICTransientLexicon._typeFlags ]
+...

@@ -1,0 +1,10 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: 1D204755-0C11-3073-9E42-4E62D857D270' ]
+platform:        tvos
+install-name:    /usr/lib/libdns_services.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _DNSXEnableProxy, _DNSXRefDeAlloc ]
+...

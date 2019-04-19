@@ -1,0 +1,20 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/AccessibilitySettingsLoader.bundle/AccessibilitySettingsLoader
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _MPAVRoutingControllerDidPickRouteNotification ]
+    objc-classes:       [ AXInvertColorsController, AccessibilitySettingsLoader, AssistiveTouchHelper, GuidedAccessManager,
+                          ZoomServicesUI, ZoomUI_PHSOSViewController, ZoomUI_SBDashBoardViewControllerOverride,
+                          ZoomUI_SBReachabilitySettingsOverride, ZoomUI_SpringBoardOverride, ZoomUI_UIAlertControllerOverride,
+                          ZoomUI_UIFocusScrollAnimatorOverride, __ZoomUI_PHSOSViewController_super,
+                          __ZoomUI_SBDashBoardViewControllerOverride_super, __ZoomUI_SBReachabilitySettingsOverride_super,
+                          __ZoomUI_SpringBoardOverride_super, __ZoomUI_UIAlertControllerOverride_super,
+                          __ZoomUI_UIFocusScrollAnimatorOverride_super ]
+    objc-ivars:         [ GuidedAccessManager._notificationToken, ZoomServicesUI._registeredForAppNotifications ]
+...

@@ -1,0 +1,38 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreControl.framework/CoreControl
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CoreControlAsset, _CoreControlGetDeviceDatabaseVersion, _CoreControlGetDeviceEDID, _CoreControlPrintDevice,
+                          _CoreControlPrintDeviceEDID, _CoreControlSearchDeviceDatabaseForCECDevice,
+                          _CoreControlSearchDeviceDatabaseForGenericDevice, _CoreControlSearchDeviceDatabaseForSpecificDevice,
+                          _kCoreControlErrorDomain, _kCoreControlInfoAction, _kCoreControlInfoCommand, _kCoreControlInfoError,
+                          _kCoreControlInfoProgress, _kCoreControlInfoStatus, _kCoreControlInfoUUID ]
+    objc-classes:       [ CoreControl, CoreControlButton, CoreControlCECDeviceProvider, CoreControlCECOverride, CoreControlHeldChord ]
+    objc-ivars:         [ CoreControl._activeSource, CoreControl._activeSourcePref, CoreControl._audioMute, CoreControl._audioMutePref,
+                          CoreControl._audioVolumeDown, CoreControl._audioVolumeDownPref, CoreControl._audioVolumeUp,
+                          CoreControl._audioVolumeUpPref, CoreControl._cecBus, CoreControl._cecDevice, CoreControl._cecDeviceAS,
+                          CoreControl._cecDeviceTV, CoreControl._cecReady, CoreControl._data, CoreControl._debugIRCode,
+                          CoreControl._debugPref, CoreControl._delegate, CoreControl._device, CoreControl._deviceCECAS,
+                          CoreControl._deviceCECTV, CoreControl._deviceEDID, CoreControl._disableAsset, CoreControl._edid,
+                          CoreControl._errorDuplicateIRCommand, CoreControl._errorInvalidArgument, CoreControl._errorNoCECBus,
+                          CoreControl._errorNoCECDevice, CoreControl._errorNoExtIRDevice, CoreControl._errorNoIRBus,
+                          CoreControl._errorNoIRCode, CoreControl._errorNoIRDevice, CoreControl._errorNoIRLearningSession,
+                          CoreControl._errorNoLink, CoreControl._errorNotReady, CoreControl._errorToBeImplemented, CoreControl._irBusRx,
+                          CoreControl._irBusTx, CoreControl._irDeviceAS, CoreControl._irDeviceASUUID, CoreControl._irDeviceAuto,
+                          CoreControl._irDeviceAutoChanged, CoreControl._irDeviceAutoUUID, CoreControl._irDeviceRemote,
+                          CoreControl._irDeviceRx, CoreControl._irDeviceTV, CoreControl._irDeviceTVUUID, CoreControl._irDeviceTx,
+                          CoreControl._irDeviceUser, CoreControl._irDeviceUserChanged, CoreControl._irDeviceUserUUID,
+                          CoreControl._irLearningSession, CoreControl._irLearningSessionType, CoreControl._irRxReady,
+                          CoreControl._irTimer, CoreControl._irTxReady, CoreControl._lastAction, CoreControl._pDevice,
+                          CoreControl._policySource, CoreControl._powerOn, CoreControl._powerOnPref, CoreControl._powerStandby,
+                          CoreControl._powerStandbyPref, CoreControl._powerStatus, CoreControl._queue, CoreControl._queueAsset,
+                          CoreControl._rcManager, CoreControl._stateBuffer, CoreControl._tokenAssetInstalled,
+                          CoreControl._tokenAssetUpdated, CoreControl._tokenInternal, CoreControl._tokenPrefChanged,
+                          CoreControlButton._button, CoreControlHeldChord._buttons, CoreControlHeldChord._delay ]
+...

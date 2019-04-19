@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVCoreSettings.framework/TVCoreSettings
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVCSHomeConfigurationStateToString, _TVCSHomeLog, _TVCoreSettingsVersionNumber, _TVCoreSettingsVersionString ]
+    objc-classes:       [ TVCSAccessory, TVCSHome, TVCSHomeManager, TVCSLockdownUtilities, TVCSRoom ]
+    objc-ivars:         [ TVCSAccessory._hmAccessory, TVCSHome._hmHome, TVCSHomeManager._accessoryBrowser, TVCSHomeManager._advertising,
+                          TVCSHomeManager._browsedCurrentHMAccessory, TVCSHomeManager._browsingForAccessory,
+                          TVCSHomeManager._cachedOwnedHomes, TVCSHomeManager._configurationInProgress,
+                          TVCSHomeManager._homeConfigurationState, TVCSHomeManager._homeManager, TVCSHomeManager._homeManagerQ,
+                          TVCSHomeManager._localAccessory, TVCSHomeManager._setupService,
+                          TVCSHomeManager._startAdvertisingForKeyTransferIfNeeded, TVCSRoom._hmRoom ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: BA9B36AF-C1EB-30A0-AF5F-47FED625CC32' ]
+platform:        tvos
+install-name:    /usr/lib/libAudioStatistics.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _CAReportingClientCreateReporterID, _CAReportingClientDestroyReporterID, 
+                       _CAReportingClientGetAudioServiceType, _CAReportingClientSendMessage, 
+                       _CAReportingClientSendSingleMessage, _CAReportingClientSetAudioServiceType, 
+                       _CAReportingClientStartReporter, _CAReportingClientStopReporter, 
+                       _CreateSharedCAReportingClient ]
+    objc-classes:    [ CAReporter, CAReportingClient ]
+...

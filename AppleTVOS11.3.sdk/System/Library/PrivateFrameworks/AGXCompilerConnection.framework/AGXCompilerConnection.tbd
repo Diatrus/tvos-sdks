@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AGXCompilerConnection.framework/AGXCompilerConnection
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ __Z21CompilerFSCacheCreateRP15CompilerFSCache, __Z22CompilerFSCacheDestroyRP15CompilerFSCache,
+                          __Z24CompilerConnectionCreatej, __Z25CompilerConnectionDestroyRP18CompilerConnection,
+                          __Z33CompilerFSCacheGetShaderCacheKeysPK15CompilerFSCache ]
+...

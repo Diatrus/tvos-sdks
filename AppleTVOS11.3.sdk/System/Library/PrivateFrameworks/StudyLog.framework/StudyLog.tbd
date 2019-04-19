@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/StudyLog.framework/StudyLog
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _SLGCreateError, _SLGCreateLoggingIsDisabledError, _SLGCreateSessionEndMetadata,
+                          _SLGCreateSessionStartMetadata, _SLGLogDefaultsChangedNotification, _SLGLogDefaultsDomain,
+                          _SLGLogDefaultsEnabledKey, _SLGLogErrorDomain, _SLGLogServiceName, _StudyLogVersionNumber,
+                          _StudyLogVersionString, _slg_general_log ]
+    objc-classes:       [ SLGLog, SLGLogXPCClient, SLGSettingsMonitor ]
+    objc-ivars:         [ SLGLogXPCClient._connection, SLGLogXPCClient._queue, SLGSettingsMonitor._delegate,
+                          SLGSettingsMonitor._isEnabled, SLGSettingsMonitor._userDefaults ]
+...

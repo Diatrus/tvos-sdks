@@ -1,0 +1,67 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _PKAllowedPlugInsEntitlement, _PKAnnotationElectionKey, _PKAnnotationExtensionKey, _PKAnnotationsFormKey,
+                          _PKAttributesInfoKey, _PKAttributesInfoKey_L, _PKAutoElectEntitlement, _PKBookmarkFormKey, _PKBundleInfoFormKey,
+                          _PKCleanTimeoutInfoKey, _PKContainingAppAttribute, _PKContainingPathFormKey, _PKDAccessRequest, _PKDAddRequest,
+                          _PKDAnnotateRequest, _PKDAnnotationsKey, _PKDBulkAnnotateRequest, _PKDBulkRequest, _PKDConflictsKey, _PKDDataKey,
+                          _PKDEnvironmentKey, _PKDErrorCodeKey, _PKDErrorKey, _PKDExtensionsKey, _PKDFindRequest, _PKDFlagsKey,
+                          _PKDIdentifierKey, _PKDLockdownRequest, _PKDMatchRequest, _PKDMatchesKey, _PKDPathsKey, _PKDReadyRequest,
+                          _PKDReceiptRequest, _PKDRemoveRequest, _PKDRequestKey, _PKDRulesKey, _PKDUUIDKey, _PKDVersionKey,
+                          _PKDataAnnotationsKey, _PKDataProtocol, _PKDedicatedInfoKey, _PKDelegateInfoKey, _PKEmbeddedCodeInfoKey,
+                          _PKEmbeddedProtocolInfoKey, _PKEntitlementsFormKey, _PKEnvironmentProvisionEntitlement,
+                          _PKErrorKeyBusyPlugIns, _PKExclusionsPreferenceKey, _PKExtensionsFormKey, _PKHashFormKey,
+                          _PKHostEntitlementInfoKey, _PKHubProtocolVersionFormKey, _PKHubProtocolVersionInfoKey, _PKIdentifierAttribute,
+                          _PKIdentifierAttribute_L, _PKIdentifierFormKey, _PKInfoFormKey, _PKLastModifiedFormKey,
+                          _PKLocalizedContainingNameFormKey, _PKLocalizedFileProviderActionNamesFormKey, _PKLocalizedNameFormKey,
+                          _PKLocalizedShortNameFormKey, _PKManagerContainingIdentifierKey, _PKManagerContainingPathKey,
+                          _PKManagerEntitlement, _PKManagerHostBundleIdentifierKey, _PKManagerHostPathKey, _PKManagerHostPidKey,
+                          _PKManagerPlugInBundleIdentifierKey, _PKManagerPlugInPathKey, _PKManagerPlugInVersionKey, _PKMultipleInfoKey,
+                          _PKNotifyAnnotationChange, _PKOriginalIdentifierFormKey, _PKOverrideEntitlement, _PKOverriderFormKey,
+                          _PKOverridingFormKey, _PKPassProxyInfoKey, _PKPathFormKey, _PKPlugInKitErrorDomain, _PKPlugInKitHostInfoKey,
+                          _PKPlugInKitInfoKey, _PKPlugInKitInfoKey_L, _PKPlugInsFormKey, _PKPreferenceDomain, _PKPrepareExtensionsKey,
+                          _PKPrepareHostProtocolKey, _PKPrepareIdentifierKey, _PKPrepareUUIDKey, _PKPrepareVersionKey,
+                          _PKPrincipalClassInfoKey, _PKProtocolAttribute, _PKProtocolAttribute_L, _PKProtocolInfoKey,
+                          _PKProtocolInfoKey_L, _PKRequirementFormKey, _PKSDKInfoKey, _PKSDKInfoKey_L, _PKSDKSpecInfoKey,
+                          _PKServiceExtensionFormKey, _PKSharedResourcesInfoKey, _PKSubsystemsInfoKey, _PKSystemResidentFormKey,
+                          _PKURLFormKey, _PKUUIDAttribute, _PKUUIDFormKey, _PKUserElectionAttribute, _PKUsesEmbeddedInfoKey,
+                          _PKVersionAnnotationsKey, _PKVersionAttribute, _PKVersionAttribute_L, _PKVersionFormKey, _oslog, _oslog_ext,
+                          _oslog_ls, _oslog_sandbox, _oslog_traffic, _pkAugmentInterface, _pkError, _pkErrorf, _pkFindProtocol,
+                          _pkFindProtocols, _pkIssueSandboxExtensionForMachService, _pkIssueSandboxExtensionForURL,
+                          _xpc_dictionary_get_array, _xpc_dictionary_get_dictionary ]
+    objc-classes:       [ PKBundle, PKDaemonClient, PKDiscoveryDriver, PKDiscoveryLSWatcher, PKHost, PKHostDefaults, PKHostPlugIn, PKManager,
+                          PKPlugInCore, PKSandboxExtension, PKService, PKServiceDefaults, PKServicePersonality, PKXPCObject ]
+    objc-ivars:         [ PKBundle.__bundle, PKBundle._supportPath, PKDaemonClient._pkd, PKDaemonClient._protocolVersion,
+                          PKDaemonClient._replyQueue, PKDiscoveryDriver._annotationNotifyToken, PKDiscoveryDriver._attributes,
+                          PKDiscoveryDriver._flags, PKDiscoveryDriver._lastResults, PKDiscoveryDriver._lsWatcher,
+                          PKDiscoveryDriver._mcNotificationToken, PKDiscoveryDriver._queue, PKDiscoveryDriver._relatedActivity,
+                          PKDiscoveryDriver._report, PKDiscoveryDriver._sync, PKDiscoveryLSWatcher._wdriver, PKHost._activeOneShots,
+                          PKHost._activePlugIns, PKHost._client, PKHost._discoveryMap, PKHost._hostInfoPlist, PKHost._hostQueue,
+                          PKHostDefaults._plugin, PKHostDefaults._queue, PKHostPlugIn.__replyQueue, PKHostPlugIn.__startQueue,
+                          PKHostPlugIn.__syncQueue, PKHostPlugIn._beganUsingAt, PKHostPlugIn._defaults,
+                          PKHostPlugIn._discoveryExtensions, PKHostPlugIn._embeddedBundle, PKHostPlugIn._embeddedPrincipal,
+                          PKHostPlugIn._environment, PKHostPlugIn._multipleInstanceUUID, PKHostPlugIn._notificationBlock,
+                          PKHostPlugIn._plugInPrincipal, PKHostPlugIn._pluginConnection, PKHostPlugIn._queuedHostPrincipal,
+                          PKHostPlugIn._queuedHostProtocol, PKHostPlugIn._sandboxExtensions, PKHostPlugIn._service,
+                          PKHostPlugIn._serviceExtension, PKHostPlugIn._sourceForm, PKHostPlugIn._state, PKHostPlugIn._supersededBy,
+                          PKHostPlugIn._supersedingUUID, PKHostPlugIn._terminating, PKHostPlugIn._useCount, PKManager._client,
+                          PKPlugInCore._annotations, PKPlugInCore._bundleInfoDictionary, PKPlugInCore._cdhash,
+                          PKPlugInCore._containingUrl, PKPlugInCore._dataContainerURL, PKPlugInCore._entitlements,
+                          PKPlugInCore._hubProtocolVersion, PKPlugInCore._identifier, PKPlugInCore._lastModified,
+                          PKPlugInCore._localizedContainingName, PKPlugInCore._localizedFileProviderActionNames,
+                          PKPlugInCore._localizedName, PKPlugInCore._localizedShortName, PKPlugInCore._onSystemVolume,
+                          PKPlugInCore._originalIdentifier, PKPlugInCore._plugInDictionary, PKPlugInCore._requirement,
+                          PKPlugInCore._url, PKPlugInCore._uuid, PKSandboxExtension._handle, PKSandboxExtension._token, PKService.__sync,
+                          PKService._delegate, PKService._personalities, PKService._serviceListener, PKService._shared,
+                          PKService._solePersonality, PKService._subsystems, PKServiceDefaults._personality,
+                          PKServicePersonality._connection, PKServicePersonality._embeddedPrincipal,
+                          PKServicePersonality._hostPrincipal, PKServicePersonality._plugInPrincipal,
+                          PKServicePersonality._preferences, PKXPCObject._object ]
+...

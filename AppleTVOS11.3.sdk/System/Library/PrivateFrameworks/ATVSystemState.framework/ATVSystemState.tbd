@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ATVSystemState.framework/ATVSystemState
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    objc-classes:       [ SSDisplay, SSILInterface, SSILInterfaceAOP, SSILInterfaceMCU, SSIndicatorLight ]
+    objc-ivars:         [ SSDisplay._ioavController, SSDisplay._queue, SSILInterfaceAOP._device, SSILInterfaceMCU._client,
+                          SSILInterfaceMCU._service, SSIndicatorLight._interface, SSIndicatorLight._queue ]
+...

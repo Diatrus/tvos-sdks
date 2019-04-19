@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HSAAuthentication.framework/HSAAuthentication
+current-version:       800
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _HSAAuthenticationProcessIncomingMessage,
+                          _HSAAuthenticationRegisterIncomingAuthenticationTokenBlockWithIdentifier,
+                          _HSAAuthenticationUnregisterIncomingAuthenticationTokenBlockWithIdentifier ]
+    objc-classes:       [ HSAAuthenticationServer ]
+...

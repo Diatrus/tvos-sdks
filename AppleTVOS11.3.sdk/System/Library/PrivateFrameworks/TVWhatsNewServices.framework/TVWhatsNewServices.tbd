@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVWhatsNewServices.framework/TVWhatsNewServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVWNServiceErrorDomain, _TVWNServiceOptionRequestTimeoutInSecondsKey,
+                          _TVWNServiceOptionShouldDismissOnMenuEventKey, _TVWNServiceOptionShouldShowWallpaperKey,
+                          _TVWNServiceOptionUserInterfaceStyleKey, _TVWNShouldShowWhatsNewKey, _TVWhatsNewServicesVersionNumber,
+                          _TVWhatsNewServicesVersionString ]
+    objc-classes:       [ TVWNService, _TVWNViewController ]
+    objc-ivars:         [ _TVWNViewController._dismissResultHandler, _TVWNViewController._dismissalInProgressFlag,
+                          _TVWNViewController._pendingDismissalCompletionBlocks, _TVWNViewController._terminationHandler ]
+...

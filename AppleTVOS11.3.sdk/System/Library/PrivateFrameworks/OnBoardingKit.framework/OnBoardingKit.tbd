@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _OBPrivacyActivityIdentifier, _OBPrivacyAdvertisingIdentifier, _OBPrivacyAnalyticsAppIdentifier,
+                          _OBPrivacyAnalyticsDeviceIdentifier, _OBPrivacyAnalyticsiCloudIdentifier, _OBPrivacyAppStoreIdentifier,
+                          _OBPrivacyAppleIDIdentifier, _OBPrivacyAppleMusicIdentifier, _OBPrivacyApplePayCashIdentifier,
+                          _OBPrivacyApplePayIdentifier, _OBPrivacyAskSiriIdentifier, _OBPrivacyCloudCallingIdentifier,
+                          _OBPrivacyDictationdentifier, _OBPrivacyEmergencySOSIdentifier, _OBPrivacyFaceIDIdentifier,
+                          _OBPrivacyImproveHealthIdentifier, _OBPrivacyImproveHealthRecordsIdentifier,
+                          _OBPrivacyImproveMapsIdentifier, _OBPrivacyLocationServicesIdentifier, _OBPrivacyMapsRAPIdentifier,
+                          _OBPrivacyNewsIdentifier, _OBPrivacyPodcastsIdentifier, _OBPrivacyPrivacyPaneIdentifier,
+                          _OBPrivacyPrivacyPaneMiniIdentifier, _OBPrivacySafariIdentifier, _OBPrivacySafariSearchIdentifier,
+                          _OBPrivacySearchIdentifier, _OBPrivacySiriIdentifier, _OBPrivacySiriSuggestionsIdentifier,
+                          _OBPrivacySpotlightSuggestionsIdentifier, _OBPrivacyTVAppIdentifier, _OBPrivacyTVProviderIdentifier,
+                          _OBPrivacyVideosIdentifier, _OBPrivacyWheelchairIdentifier, _OBPrivacyiBooksIdentifier,
+                          _OBPrivacyiCloudKeychainIdentifier, _OBPrivacyiTunesStoreIdentifier, _OBPrivacyiTunesUIdentifier,
+                          _OBProcessNameForPID, __OBLoggingFacility ]
+    objc-classes:       [ OBAnalyticsManager, OBBundle, OBBundleManager, OBCapabilities, OBFlow, OBOnBoardingKitPrivacyLinkInteraction,
+                          OBOnBoardingKitPrivacyLinkPresentation, OBOnBoardingKitPrivacySplashPresentation,
+                          OBOnBoardingKitPrivacyUnifiedAboutPresentation, OBPrivacyCombinedController, OBPrivacyFlow,
+                          OBPrivacyLinkButton, OBPrivacyLinkController, OBPrivacyLinkController_tvOS, OBPrivacyLinkView,
+                          OBPrivacyModalNavigationController, OBPrivacyPresenter, OBPrivacySplashController, OBPrivacySplashText,
+                          OBSplashBullet, OBSplashContent, OBStagedMetric, OBUtilities ]
+    objc-ivars:         [ OBAnalyticsManager._shouldStashMetrics, OBAnalyticsManager._stagedMetrics, OBBundle._bundle,
+                          OBBundle._bundleVersion, OBBundle._identifier, OBCapabilities._preventOpeningSafari,
+                          OBCapabilities._preventURLDataDetection, OBOnBoardingKitPrivacyLinkInteraction._bundleid,
+                          OBOnBoardingKitPrivacyLinkInteraction._has, OBOnBoardingKitPrivacyLinkInteraction._timestamp,
+                          OBOnBoardingKitPrivacyLinkPresentation._bundleid, OBOnBoardingKitPrivacyLinkPresentation._has,
+                          OBOnBoardingKitPrivacyLinkPresentation._timestamp, OBOnBoardingKitPrivacySplashPresentation._bundleid,
+                          OBOnBoardingKitPrivacySplashPresentation._has, OBOnBoardingKitPrivacySplashPresentation._timestamp,
+                          OBOnBoardingKitPrivacyUnifiedAboutPresentation._bundleid,
+                          OBOnBoardingKitPrivacyUnifiedAboutPresentation._has,
+                          OBOnBoardingKitPrivacyUnifiedAboutPresentation._timestamp,
+                          OBPrivacyCombinedController._allowsOpeningSafari, OBPrivacyCombinedController._darkMode,
+                          OBPrivacyCombinedController._displayLanguage, OBPrivacyCombinedController._presentedFromPrivacyPane,
+                          OBPrivacyFlow._bundle, OBPrivacyFlow._buttonCaption, OBPrivacyFlow._buttonIcon,
+                          OBPrivacyFlow._buttonIconLoaded, OBPrivacyFlow._buttonTitle, OBPrivacyFlow._splashContentName,
+                          OBPrivacyFlow._splashPlist, OBPrivacyFlow._splashShortTitle, OBPrivacyFlow._splashTitle,
+                          OBPrivacyLinkButton._floatingContentView, OBPrivacyLinkButton._iconView, OBPrivacyLinkButton._label,
+                          OBPrivacyLinkButton._textView, OBPrivacyLinkController._allowsOpeningSafari,
+                          OBPrivacyLinkController._bundleIdentifiers, OBPrivacyLinkController._bundles,
+                          OBPrivacyLinkController._displayCaptionText, OBPrivacyLinkController._displayIcon,
+                          OBPrivacyLinkController._displayLanguage, OBPrivacyLinkController._displayLargeIcon,
+                          OBPrivacyLinkController_tvOS._linkView, OBPrivacyLinkView._buttonText, OBPrivacyLinkView._captionText,
+                          OBPrivacyLinkView._captionView, OBPrivacyLinkView._linkButton, OBPrivacyLinkView._stackView,
+                          OBPrivacyModalNavigationController._dismissHandler, OBPrivacyPresenter._combinedController,
+                          OBPrivacyPresenter._dismissHandler, OBPrivacyPresenter._presentedController,
+                          OBPrivacyPresenter._presentedIdentifiers, OBPrivacyPresenter._presentingViewController,
+                          OBPrivacyPresenter._splashController, OBPrivacySplashController._allowsOpeningSafari,
+                          OBPrivacySplashController._displayLanguage, OBPrivacySplashController._flow,
+                          OBPrivacySplashController._forceLargeMargins, OBPrivacySplashController._isCombined,
+                          OBPrivacySplashController._showLinkToPrivacyGateway, OBPrivacySplashController._showsLinkToUnifiedAbout,
+                          OBPrivacySplashController._suppressPerPageAnalyticsLogging, OBPrivacySplashController._useModalStyle,
+                          OBPrivacySplashController._useSmallTitle, OBPrivacySplashText._text, OBSplashBullet._icon,
+                          OBSplashBullet._text, OBSplashContent._bullets, OBSplashContent._text, OBStagedMetric._metric,
+                          OBStagedMetric._metricId ]
+...

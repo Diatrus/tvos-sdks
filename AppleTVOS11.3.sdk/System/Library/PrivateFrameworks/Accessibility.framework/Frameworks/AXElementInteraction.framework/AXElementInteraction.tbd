@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXElementInteraction.framework/AXElementInteraction
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXAXElementInteractionVersionNumber, _AXAXElementInteractionVersionString ]
+    objc-classes:       [ AXElementInteractionManager ]
+    objc-ivars:         [ AXElementInteractionManager._axEventObserver, AXElementInteractionManager._client,
+                          AXElementInteractionManager._delegate, AXElementInteractionManager._displayCursor,
+                          AXElementInteractionManager._focusedElement, AXElementInteractionManager._interactionEnabled ]
+...

@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage
+current-version:       100.6
+compatibility-version: 1
+objc-constraint:       retain_release
+parent-umbrella:       MetalPerformanceShaders
+exports:
+  - archs:              [ arm64 ]
+    allowable-clients:  [ MetalPerformanceShaders ]
+    symbols:            [ _MPSSubTileEncode ]
+    objc-classes:       [ MPSBinaryImageKernel, MPSImageAdd, MPSImageAreaMax, MPSImageAreaMin, MPSImageArithmetic, MPSImageBilinearScale,
+                          MPSImageBox, MPSImageConversion, MPSImageConvolution, MPSImageCopyToMatrix, MPSImageDilate, MPSImageDivide,
+                          MPSImageErode, MPSImageEuclideanDistanceTransform, MPSImageFindKeypoints, MPSImageGaussianBlur,
+                          MPSImageGaussianPyramid, MPSImageGuidedFilter, MPSImageHistogram, MPSImageHistogramEqualization,
+                          MPSImageHistogramSpecification, MPSImageIntegral, MPSImageIntegralOfSquares, MPSImageLanczosScale,
+                          MPSImageLaplacian, MPSImageMedian, MPSImageMultiply, MPSImageReduceColumnMax, MPSImageReduceColumnMean,
+                          MPSImageReduceColumnMin, MPSImageReduceColumnSum, MPSImageReduceRowMax, MPSImageReduceRowMean,
+                          MPSImageReduceRowMin, MPSImageReduceRowSum, MPSImageSobel, MPSImageStatisticsMean,
+                          MPSImageStatisticsMeanAndVariance, MPSImageStatisticsMinAndMax, MPSImageSubtract, MPSImageTent,
+                          MPSImageThresholdBinary, MPSImageThresholdBinaryInverse, MPSImageThresholdToZero,
+                          MPSImageThresholdToZeroInverse, MPSImageThresholdTruncate, MPSImageTranspose, MPSUnaryImageKernel ]
+    objc-ivars:         [ MPSBinaryImageKernel._encode, MPSBinaryImageKernel._encodeData, MPSUnaryImageKernel._encode,
+                          MPSUnaryImageKernel._encodeData, MPSUnaryImageKernel._getPreferredTileSize ]
+...

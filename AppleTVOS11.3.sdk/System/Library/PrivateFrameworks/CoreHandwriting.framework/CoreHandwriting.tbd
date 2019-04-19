@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting
+current-version:       0
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _CHRecognitionOptionTextBefore ]
+    objc-classes:       [ CHBottomUpStrokeGroupingStrategy, CHBoxcarFilterPointFIFO, CHCharacterSetRules, CHDrawing,
+                          CHIndexableContentQuery, CHPatternGraph, CHPointFIFO, CHPointStrokeFIFO, CHQuadCurvePointFIFO, CHQuery,
+                          CHRecognitionResult, CHRecognitionSession, CHRecognitionSessionIndexableContent, CHRecognitionSessionResult,
+                          CHRecognizer, CHSearchQuery, CHStrokeGroup, CHStrokeGroupRecognitionResult, CHStrokeGroupingResult,
+                          CHStrokeGroupingStrategy, CHTitleQuery, CHVisualizationManager ]
+...

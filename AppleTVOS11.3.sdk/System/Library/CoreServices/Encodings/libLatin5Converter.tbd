@@ -1,0 +1,11 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libLatin5Converter.dylib
+current-version:       70
+compatibility-version: 1
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ ___CFStringEncodingGetLatin5ConverterDefinition ]
+...

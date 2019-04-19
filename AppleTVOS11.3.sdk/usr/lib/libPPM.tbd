@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ arm64 ]
+uuids:           [ 'arm64: D23E3463-F879-3DE1-93E8-89E0B98D5F97' ]
+platform:        tvos
+install-name:    /usr/lib/libPPM.dylib
+objc-constraint: none
+exports:         
+  - archs:           [ arm64 ]
+    symbols:         [ _clientNumberAlrt, _clientNumberBsbd, _clientNumberPlat, _clientNumberStck, 
+                       _clientNumberWifi, _gNotifyPort, _kApplePPM ]
+    objc-classes:    [ IOKitUserClientInterface, PPMClient ]
+...

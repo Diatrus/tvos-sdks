@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/DeviceCheck.framework/DeviceCheck
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _DCErrorDomain, _DeviceCheckVersionNumber, _DeviceCheckVersionString, __DCLogSystem ]
+    objc-classes:       [ DCContext, DCDevice, DCDeviceMetadataDaemonConnection, DCDeviceMetadataInterface ]
+    objc-ivars:         [ DCContext._clientAppID, DCDeviceMetadataDaemonConnection._conn, DCDeviceMetadataDaemonConnection._connLock ]
+...

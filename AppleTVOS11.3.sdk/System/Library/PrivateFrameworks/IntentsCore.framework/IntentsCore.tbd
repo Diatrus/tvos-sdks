@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/IntentsCore.framework/IntentsCore
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _INCExtractPreferencesResponseFromMetricsContext, _INCGenerateMetricsContextUsingAppPreferenceResponse,
+                          _IntentsCoreVersionNumber, _IntentsCoreVersionString ]
+    objc-classes:       [ INCExtensionManager, INCExtensionRequest, INCWatchdogTimer ]
+    objc-ivars:         [ INCExtensionManager._extensions, INCExtensionManager._killTimers, INCExtensionManager._queue,
+                          INCExtensionRequest._contextTimer, INCExtensionRequest._error, INCExtensionRequest._extension,
+                          INCExtensionRequest._extensionInputItems, INCExtensionRequest._identifier, INCExtensionRequest._queue,
+                          INCExtensionRequest._requestIdentifier, INCExtensionRequest._requestOperationQueue,
+                          INCWatchdogTimer._timerSource ]
+...

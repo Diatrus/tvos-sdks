@@ -1,0 +1,23 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVControlServices.framework/TVControlServices
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _TVCSEndpointServiceMachName, _TVCSLogComponent, _TVControlServicesVersionNumber,
+                          _TVControlServicesVersionString, __TVCSRemoteInputLimitingCenterUnbalancedEndLimitingRemoteInput ]
+    objc-classes:       [ TVCSEndpoint, TVCSEndpointManager, TVCSEndpointServiceClientInterface, TVCSEndpointServiceConnection,
+                          TVCSEndpointServiceInterface, TVCSPairableEndpoint, TVCSPairedEndpoint, TVCSRemoteInputLimitingCenter ]
+    objc-ivars:         [ TVCSEndpoint._displayName, TVCSEndpoint._remoteAppName, TVCSEndpoint._type,
+                          TVCSEndpointManager._pairableEndpoints, TVCSEndpointManager._pairedEndpoints,
+                          TVCSEndpointManager._serviceConnection, TVCSEndpointManager._startedManagement,
+                          TVCSEndpointManager._startingManagement, TVCSEndpointServiceConnection._connection,
+                          TVCSEndpointServiceConnection._delegate, TVCSPairableEndpoint._bonjourServiceName,
+                          TVCSPairableEndpoint._pairingPublicKey, TVCSPairedEndpoint._pairingIdentifier,
+                          TVCSRemoteInputLimitingCenter._applicationActive, TVCSRemoteInputLimitingCenter._connection,
+                          TVCSRemoteInputLimitingCenter._limitCount, TVCSRemoteInputLimitingCenter._viewServiceActive ]
+...

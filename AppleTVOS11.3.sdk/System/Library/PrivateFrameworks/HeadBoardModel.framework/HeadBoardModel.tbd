@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HeadBoardModel.framework/HeadBoardModel
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _HBAppGridOrderKey, _HBAppIdentifierKey, _HBFolderIdentifierKey, _HBFolderItemsKey, _HBFolderNameKey,
+                          _HBItemTypeKey, _HBModelItemApplication, _HBModelItemFolder, _HBModelSerializationDidSerializeNotification,
+                          _HBModelSerializationErrorDomain, _HBRootFolderKey, _HeadBoardModelVersionNumber,
+                          _HeadBoardModelVersionString ]
+    objc-classes:       [ HBModelSerialization, HBRawApp, HBRawFolder, HBRawRootItem ]
+    objc-ivars:         [ HBRawApp._applicationIdentifier, HBRawFolder._folderIdentifier, HBRawFolder._items, HBRawFolder._name,
+                          HBRawRootItem._itemOrderId, HBRawRootItem._parentFolder ]
+...

@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib
+current-version:       1
+compatibility-version: 1
+parent-umbrella:       vecLib
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _quadrature_integrate ]
+...

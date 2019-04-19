@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXPineBoardServerInstance.framework/AXPineBoardServerInstance
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXPineBoardServerInstanceVersionNumber, _AXPineBoardServerInstanceVersionString ]
+    objc-classes:       [ AXPineBoardServerInstance, AXPineBoardServiceProvider ]
+    objc-ivars:         [ AXPineBoardServerInstance._assetMonitor, AXPineBoardServerInstance._axEnabledNotificationObserverToken,
+                          AXPineBoardServerInstance._client, AXPineBoardServerInstance._processWatcher,
+                          AXPineBoardServerInstance._server, AXPineBoardServerInstance._serviceProvider,
+                          AXPineBoardServerInstance._systemAppServerRunning ]
+...

@@ -1,0 +1,42 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/TVPhotoSources.framework/TVPhotoSources
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _PBSAppProviderTypeScreenSaver, _PBScreensaverCustomProvider, _PBScreensaverProvidesSettingsUI,
+                          _PBScreensaverSettingsURLScheme, _PBScreensaverShowInSettings, _PBScreensaverStyle, _PBScreensaverTitleKey,
+                          _TVPhotoCacheManagerErrorCode, _TVPhotoServiceOptionsCacheFolderKey, _TVPhotoServiceOptionsMaxAssetsKey,
+                          _TVPhotoServiceOptionsMaxSizeInMBKey, _TVPhotoServiceOptionsUnrestrictedAssetFetchDurationKey,
+                          _TVPhotoSourceAppProviderIdentifier, _TVPhotoSourceManagerSourcesUpdatedNotification,
+                          _TVPhotoSourcesImageCacheUpdatedNotification, _TVPhotoSourcesVersionNumber, _TVPhotoSourcesVersionString ]
+    objc-classes:       [ TVMutablePhotoAsset, TVMutablePhotoCollection, TVPhotoAsset, TVPhotoCollection, TVPhotoScreenSaverCache,
+                          TVPhotoSource, TVPhotoSourceAppProvider, TVPhotoSourceExtensionContext, TVPhotoSourceExtensionHostContext,
+                          TVPhotoSourceManager, TVPhotoSourceProvider, TVPhotoSourceService, TVPhotoStreamClient, TVScreenSaverProvider,
+                          TVServiceProviderUtil, _TVCachedAssetInfo, _TVPhotoServiceInterfaceForwarding, _TVServiceProviderConnection ]
+    objc-ivars:         [ TVPhotoAsset._HTTPHeaderFields, TVPhotoAsset._assetIdentifier, TVPhotoAsset._dateCreated,
+                          TVPhotoAsset._fullResolutionURL, TVPhotoAsset._isTemporaryFile, TVPhotoCollection._collectionIdentifier,
+                          TVPhotoCollection._collectionName, TVPhotoCollection._hasExternalURLs, TVPhotoCollection._photoSource,
+                          TVPhotoCollection._remoteURL, TVPhotoScreenSaverCache._cachedAssets,
+                          TVPhotoScreenSaverCache._cachingEnabled, TVPhotoScreenSaverCache._currentScreenSaverInfo,
+                          TVPhotoScreenSaverCache._didFinishReceivingPhotoAssets, TVPhotoScreenSaverCache._group,
+                          TVPhotoScreenSaverCache._imageProxies, TVPhotoScreenSaverCache._isCachingSessionInProgress,
+                          TVPhotoScreenSaverCache._photoAssets, TVPhotoScreenSaverCache._photoCacheCompletionBlock,
+                          TVPhotoScreenSaverCache._photoSourceService, TVPhotoScreenSaverCache._preferencesObserverToken,
+                          TVPhotoScreenSaverCache._refreshInterval, TVPhotoScreenSaverCache._screenSaverCollection,
+                          TVPhotoScreenSaverCache._screenSaverPhotoSource, TVPhotoScreenSaverCache._screenSaverPrefs,
+                          TVPhotoScreenSaverCache._serialQueue, TVPhotoScreenSaverCache._sessionIdentifier,
+                          TVPhotoScreenSaverCache._timerSource, TVPhotoScreenSaverCache._xpcActivity, TVPhotoSource._extension,
+                          TVPhotoSourceAppProvider._photoSourceService, TVPhotoSourceExtensionContext._protocolHandler,
+                          TVPhotoSourceManager._appProviderPhotoSource, TVPhotoSourceManager._photoSources,
+                          TVPhotoSourceManager._sourceMatchingContext, TVPhotoSourceProvider._extensionContext,
+                          TVPhotoSourceService._photoCacheCompletionBlock, TVPhotoSourceService._photoServiceDelegate,
+                          TVPhotoSourceService._sessionID, TVPhotoStreamClient._connection, TVScreenSaverProvider._listener,
+                          TVScreenSaverProvider._serviceProvider, _TVCachedAssetInfo._assetIdentifier, _TVCachedAssetInfo._assetPath,
+                          _TVPhotoServiceInterfaceForwarding._photoServiceInterface, _TVServiceProviderConnection._connection,
+                          _TVServiceProviderConnection._procAssertion ]
+...

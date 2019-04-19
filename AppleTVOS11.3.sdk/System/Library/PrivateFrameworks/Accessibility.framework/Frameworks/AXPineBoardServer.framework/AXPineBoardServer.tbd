@@ -1,0 +1,21 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Accessibility.framework/Frameworks/AXPineBoardServer.framework/AXPineBoardServer
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXIPCMessageKeySystemAppDismissSiri, _AXIPCMessageKeySystemAppIsAppSwitcherVisible,
+                          _AXIPCMessageKeySystemAppIsMediaPlaying, _AXIPCMessageKeySystemAppIsNowPlayingUIVisible,
+                          _AXIPCMessageKeySystemAppIsReceivingAirPlay, _AXIPCMessageKeySystemAppIsScreenSaverVisible,
+                          _AXIPCMessageKeySystemAppIsSiriTalkingOrListening, _AXIPCMessageKeySystemAppIsSiriVisible,
+                          _AXIPCMessageKeySystemAppIsSoftwareUpdateUIVisible, _AXIPCMessageKeySystemAppOpenSiri,
+                          _AXIPCMessageKeySystemAppPID, _AXIPCMessageKeySystemAppRebootDevice,
+                          _AXIPCMessageKeySystemAppWakeUpDeviceIfNecessary, _AXIPCPayloadKeyBoolResult, _AXPineBoardServerServiceName,
+                          _AXPineBoardServerVersionNumber, _AXPineBoardServerVersionString ]
+    objc-classes:       [ AXPineBoardServer ]
+    objc-ivars:         [ AXPineBoardServer._localServiceProvider ]
+...

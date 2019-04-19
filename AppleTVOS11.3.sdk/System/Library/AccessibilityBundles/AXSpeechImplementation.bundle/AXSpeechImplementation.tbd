@@ -1,0 +1,13 @@
+--- !tapi-tbd-v3
+archs:                 [ arm64 ]
+platform:              tvos
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/AccessibilityBundles/AXSpeechImplementation.bundle/AXSpeechImplementation
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:              [ arm64 ]
+    symbols:            [ _AXPublicSpeechLanguageCanonicalFormToGeneralLanguage ]
+    objc-classes:       [ AXSpeechActionPublicImplementation, AXSpeechPublicInterface, __AXSpeechActionPublicImplementation_super ]
+...
